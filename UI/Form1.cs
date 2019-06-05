@@ -38,7 +38,20 @@ namespace UI
 
         private void ButtonAgainstFriend_Click(object sender, EventArgs e)
         {
+            //build othello board with m_BoardSize.
+            //method to start the game.
+        }
 
+        public int BoardSize
+        {
+            get
+            {
+                return m_BoardSize;
+            }
+            set
+            {
+                this.m_BoardSize = value;
+            }
         }
     }
 }

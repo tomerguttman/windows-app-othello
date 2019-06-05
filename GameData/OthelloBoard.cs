@@ -4,7 +4,7 @@ using System.Text;
 
 namespace GameData
 {
-    class OthelloBoard
+    public class OthelloBoard
     {
         private int m_BoardSize;
         private Point[,] m_OthelloBoard;

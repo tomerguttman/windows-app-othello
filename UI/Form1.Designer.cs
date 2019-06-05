@@ -45,6 +45,7 @@
             // 
             // ButtonAgainstPC
             // 
+            this.ButtonAgainstPC.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.ButtonAgainstPC.Location = new System.Drawing.Point(12, 75);
             this.ButtonAgainstPC.Name = "ButtonAgainstPC";
             this.ButtonAgainstPC.Size = new System.Drawing.Size(160, 61);
@@ -55,6 +56,7 @@
             // 
             // ButtonAgainstFriend
             // 
+            this.ButtonAgainstFriend.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.ButtonAgainstFriend.Location = new System.Drawing.Point(178, 75);
             this.ButtonAgainstFriend.Name = "ButtonAgainstFriend";
             this.ButtonAgainstFriend.Size = new System.Drawing.Size(178, 61);
