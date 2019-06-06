@@ -1152,7 +1152,6 @@
         private System.Windows.Forms.PictureBox pictureBox2H;
         private System.Windows.Forms.PictureBox pictureBox2G;
         private System.Windows.Forms.PictureBox pictureBox2F;
-        private System.Windows.Forms.PictureBox pictureBox59;
         private System.Windows.Forms.PictureBox pictureBox2C;
         private System.Windows.Forms.PictureBox pictureBox2D;
         private System.Windows.Forms.PictureBox pictureBox2E;
