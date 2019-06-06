@@ -233,10 +233,33 @@ namespace GameData
 
             public override string ToString() //well have to check if it works properly.
             {
-                string o_PointInString = "pictureBox";
-                o_PointInString += ((this.m_Longtitude) + 'A');
-                o_PointInString += (((this.m_Latitude)+1).ToString());
+                string o_PointInString = null;
+                o_PointInString += (this.m_Longtitude).ToString();
+                o_PointInString += (((this.m_Latitude)).ToString());
                 return o_PointInString;
+            }
+
+            public static Point ToPoint(string i_PointName)
+            { 
+                Point returnPoint = new Point(0,'\0','\0');
+                int i;
+                int strLength = i_PointName.Length;
+                
+
+                for (i = 10; i < strLength; i++)
+                {
+                    if(char.IsDigit(i_PointName[i]))
+                    {
+                        returnPoint.M_Longtitude *= 10;
+                        returnPoint.M_Longtitude += int.Parse(i_PointName[i].ToString());
+                    }
+                    else
+                    {
+                        returnPoint.M_Latitude = i_PointName[i];
+                    }
+                }
+
+                return returnPoint;
             }
         }
     }

@@ -63,29 +63,9 @@ namespace UI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap CoinRed {
-            get {
-                object obj = ResourceManager.GetObject("CoinRed", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap CoinRed1 {
             get {
                 object obj = ResourceManager.GetObject("CoinRed1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap CoinYellow {
-            get {
-                object obj = ResourceManager.GetObject("CoinYellow", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +83,9 @@ namespace UI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap refreshBlue {
+        internal static System.Drawing.Bitmap Othello6x6BoardBackground {
             get {
-                object obj = ResourceManager.GetObject("refreshBlue", resourceCulture);
+                object obj = ResourceManager.GetObject("Othello6x6BoardBackground", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +93,9 @@ namespace UI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap refreshBlue1 {
+        internal static System.Drawing.Bitmap refreshBlue {
             get {
-                object obj = ResourceManager.GetObject("refreshBlue1", resourceCulture);
+                object obj = ResourceManager.GetObject("refreshBlue", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,19 +113,9 @@ namespace UI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap refreshGreen1 {
+        internal static System.Drawing.Bitmap thumb_Information {
             get {
-                object obj = ResourceManager.GetObject("refreshGreen1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap uk_co_alexcale_othello {
-            get {
-                object obj = ResourceManager.GetObject("uk.co.alexcale.othello", resourceCulture);
+                object obj = ResourceManager.GetObject("thumb_Information", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

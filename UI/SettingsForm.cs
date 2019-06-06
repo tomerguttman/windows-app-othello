@@ -8,11 +8,12 @@ using GameData;
 
 namespace UI
 {
-    public partial class Form1 : Form
+    public partial class SettingsForm : Form
     {
-        public int m_BoardSize = 6;
+        int m_BoardSize = 6;
+        int m_NumberOfPlayers = 0;
 
-        public Form1()
+        public SettingsForm()
         {
             InitializeComponent();
         }
@@ -33,13 +34,12 @@ namespace UI
 
         private void AgainstPc_Click(object sender, EventArgs e)
         {
-
+            m_NumberOfPlayers = 1;
         }
 
         private void ButtonAgainstFriend_Click(object sender, EventArgs e)
         {
-            //build othello board with m_BoardSize.
-            //method to start the game.
+            m_NumberOfPlayers = 2;
         }
 
         public int BoardSize
@@ -51,6 +51,18 @@ namespace UI
             set
             {
                 this.m_BoardSize = value;
+            }
+        }
+
+        public int NumberOfPlayers
+        {
+            get
+            {
+                return m_NumberOfPlayers;
+            }
+            set
+            {
+                this.m_NumberOfPlayers = value;
             }
         }
     }

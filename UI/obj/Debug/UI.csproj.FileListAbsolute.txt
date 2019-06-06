@@ -1,0 +1,16 @@
+C:\Users\Tomer\Documents\Computer Science Programming\.NET Framework C#\Task1\WindowsApp_Othello\UI\obj\Debug\UI.csprojResolveAssemblyReference.cache
+C:\Users\Tomer\Documents\Computer Science Programming\.NET Framework C#\Task1\WindowsApp_Othello\UI\obj\Debug\UI.FormBoard6x6.resources
+C:\Users\Tomer\Documents\Computer Science Programming\.NET Framework C#\Task1\WindowsApp_Othello\UI\obj\Debug\UI.BoardForm10x10.resources
+C:\Users\Tomer\Documents\Computer Science Programming\.NET Framework C#\Task1\WindowsApp_Othello\UI\obj\Debug\UI.BoardForm12x12.resources
+C:\Users\Tomer\Documents\Computer Science Programming\.NET Framework C#\Task1\WindowsApp_Othello\UI\obj\Debug\UI.BoardForm8x8.resources
+C:\Users\Tomer\Documents\Computer Science Programming\.NET Framework C#\Task1\WindowsApp_Othello\UI\obj\Debug\UI.SettingsForm.resources
+C:\Users\Tomer\Documents\Computer Science Programming\.NET Framework C#\Task1\WindowsApp_Othello\UI\obj\Debug\UI.Properties.Resources.resources
+C:\Users\Tomer\Documents\Computer Science Programming\.NET Framework C#\Task1\WindowsApp_Othello\UI\obj\Debug\UI.csproj.GenerateResource.Cache
+C:\Users\Tomer\Documents\Computer Science Programming\.NET Framework C#\Task1\WindowsApp_Othello\UI\bin\Debug\UI.exe
+C:\Users\Tomer\Documents\Computer Science Programming\.NET Framework C#\Task1\WindowsApp_Othello\UI\bin\Debug\UI.pdb
+C:\Users\Tomer\Documents\Computer Science Programming\.NET Framework C#\Task1\WindowsApp_Othello\UI\bin\Debug\GameData.dll
+C:\Users\Tomer\Documents\Computer Science Programming\.NET Framework C#\Task1\WindowsApp_Othello\UI\bin\Debug\GameLogic.dll
+C:\Users\Tomer\Documents\Computer Science Programming\.NET Framework C#\Task1\WindowsApp_Othello\UI\bin\Debug\GameLogic.pdb
+C:\Users\Tomer\Documents\Computer Science Programming\.NET Framework C#\Task1\WindowsApp_Othello\UI\bin\Debug\GameData.pdb
+C:\Users\Tomer\Documents\Computer Science Programming\.NET Framework C#\Task1\WindowsApp_Othello\UI\obj\Debug\UI.exe
+C:\Users\Tomer\Documents\Computer Science Programming\.NET Framework C#\Task1\WindowsApp_Othello\UI\obj\Debug\UI.pdb

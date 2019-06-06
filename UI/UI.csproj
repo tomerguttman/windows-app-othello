@@ -39,11 +39,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BoardForm.cs">
+    <Compile Include="BoardForm6x6.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BoardForm.Designer.cs">
-      <DependentUpon>BoardForm.cs</DependentUpon>
+    <Compile Include="BoardForm6x6.Designer.cs">
+      <DependentUpon>BoardForm6x6.cs</DependentUpon>
     </Compile>
     <Compile Include="BoardForm10x10.cs">
       <SubType>Form</SubType>
@@ -63,16 +63,28 @@
     <Compile Include="BoardForm8x8.Designer.cs">
       <DependentUpon>BoardForm8x8.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="BoardFormManager.cs" />
+    <Compile Include="EndOthelloForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="EndOthelloForm.Designer.cs">
+      <DependentUpon>EndOthelloForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingsForm.Designer.cs">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="BoardForm.resx">
-      <DependentUpon>BoardForm.cs</DependentUpon>
+    <EmbeddedResource Include="BoardForm6x6.resx">
+      <DependentUpon>BoardForm6x6.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BoardForm10x10.resx">
       <DependentUpon>BoardForm10x10.cs</DependentUpon>
@@ -83,19 +95,17 @@
     <EmbeddedResource Include="BoardForm8x8.resx">
       <DependentUpon>BoardForm8x8.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="EndOthelloForm.resx">
+      <DependentUpon>EndOthelloForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsForm.resx">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -117,31 +127,12 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\CoinYellow.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\CoinRed.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\refreshBlue.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\refreshGreen.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\CoinRed1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\CoinYellow1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\refreshBlue1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\refreshGreen1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\uk.co.alexcale.othello.jpg" />
+    <Content Include="Resources\CoinRed1.png" />
+    <Content Include="Resources\CoinYellow1.png" />
+    <Content Include="Resources\Othello6x6BoardBackground.jpg" />
+    <Content Include="Resources\refreshBlue.png" />
+    <Content Include="Resources\refreshGreen.png" />
+    <Content Include="Resources\thumb_Information.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

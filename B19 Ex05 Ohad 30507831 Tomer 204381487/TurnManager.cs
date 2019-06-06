@@ -12,6 +12,23 @@ namespace GameLogic
         private const string k_UpdateValidity = "UpdateCellValidity";
         private const string k_ChangeRivalDiscsCellsColor = "ChangeDiscsColor";
 
+        public static List<string> GetListOfOptionalPointsToChooseFromParsedToString(GameData.OthelloBoard i_OthelloBoard, char i_CurrentPlayerColor)
+        {
+
+            GameData.OthelloBoard tempOthelloBoard = new GameData.OthelloBoard(i_OthelloBoard);
+            List<GameData.OthelloBoard.Point> validPointsToChooseFrom = new List<GameData.OthelloBoard.Point>();
+            List<string> o_ValidPointsToChooseFromString  = new List<string>();
+
+            UpdateValidCells(tempOthelloBoard, i_CurrentPlayerColor, validPointsToChooseFrom);
+
+            foreach(GameData.OthelloBoard.Point point in validPointsToChooseFrom)
+            {
+                o_ValidPointsToChooseFromString.Add(point.ToString());
+            }
+
+            return o_ValidPointsToChooseFromString;
+        }
+
         public enum eDirection
         {
             Up,
@@ -24,15 +41,14 @@ namespace GameLogic
             UpLeft,
         }
 
-        public static void OthelloTurnManager(GameData.OthelloBoard io_OthelloBoard, GameData.OthelloPlayer i_Player, ref int io_ConsecutiveNumberOfTurnsWithoutValidMoves)
+        public static void OthelloTurnManager(GameData.OthelloBoard io_OthelloBoard, string i_PointName, GameData.OthelloPlayer i_Player, ref int io_ConsecutiveNumberOfTurnsWithoutValidMoves)
         {
             GameData.OthelloBoard tempOthelloBoard = new GameData.OthelloBoard(io_OthelloBoard);
-            GameData.OthelloBoard.Point playersPointChoice;
+            GameData.OthelloBoard.Point playersPointChoice = GameData.OthelloBoard.Point.ToPoint(i_PointName);
             List<GameData.OthelloBoard.Point> validPointsToChooseFrom = new List<GameData.OthelloBoard.Point>();
 
             if (UpdateValidCells(tempOthelloBoard, i_Player.Color, validPointsToChooseFrom) > 0)
             {
-                playersPointChoice = UI.Console.RecievePointFromPlayer(tempOthelloBoard, i_Player, validPointsToChooseFrom);//clicked PictureBox in the form
                 playersPointChoice.M_CellValue = i_Player.Color;
                 validPointsToChooseFrom.Clear();
                 io_OthelloBoard.M_OthelloBoard[playersPointChoice.M_Longtitude - 1, (int)playersPointChoice.M_Latitude - 'A'].M_CellValue = i_Player.Color;
@@ -201,6 +217,7 @@ namespace GameLogic
 
         public static void UpdateCellsValidity(GameData.OthelloBoard io_OthelloBoard, GameData.OthelloBoard.Point i_CurrentPoint, int i_LongtitudeValue, int i_LatitudeValue, List<GameData.OthelloBoard.Point> io_ValidPointsToChooseFrom)
         {
+            //io_ValidPointsToChooseFrom = new List<GameData.OthelloBoard.Point>();
             int latitude = (i_CurrentPoint.M_Latitude - 'A') + i_LatitudeValue;
             int longtitude = i_CurrentPoint.M_Longtitude - 1 + i_LongtitudeValue;
             bool isPotentialValidPoint = false;
