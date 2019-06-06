@@ -4,32 +4,32 @@ using System.Text;
 
 namespace GameData
 {
-    class OthelloPlayer
+    public class OthelloPlayer
     {
-        private string m_PlayerName;
+        int m_PlayerNumber;
         private char m_Color;
         public const char k_Black = 'X';
         public const char k_White = 'O';
 
-        public OthelloPlayer()
+        public OthelloPlayer(int i_PlayerNumber)
         {
-            m_PlayerName = null;
+            m_PlayerNumber = i_PlayerNumber;
         }
 
-        public string M_PlayerName
+        public int PlayerNumber
         {
             get
             {
-                return m_PlayerName;
+                return m_PlayerNumber;
             }
 
             set
             {
-                m_PlayerName = value;
+                this.m_PlayerNumber = value;
             }
         }
 
-        public char M_Color
+        public char Color
         {
             get
             {
@@ -42,10 +42,11 @@ namespace GameData
             }
         }
 
-        public void PrintPlayerInfo()
+        public string PrintPlayerInfo()
         {
-            string playerInfo = string.Format("{0} {1}", m_PlayerName, m_Color);
-            System.Console.WriteLine(playerInfo);
+            string o_PlayerInfo = string.Format("{0}", m_Color);
+
+            return o_PlayerInfo;
         }
     }
 }

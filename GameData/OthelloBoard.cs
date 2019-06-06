@@ -9,52 +9,52 @@ namespace GameData
         private int m_BoardSize;
         private Point[,] m_OthelloBoard;
 
-        public static void PrintBoard(OthelloBoard i_OthelloBoard)
-        {
-            for (int i = 0; i < i_OthelloBoard.m_BoardSize; i++)
-            {
-                if (i == 0)
-                {
-                    if (i_OthelloBoard.m_BoardSize == 8)
-                    {
-                        Console.WriteLine("    A   B   C   D   E   F   G   H");
-                        Console.WriteLine("  =================================");
-                    }
-                    else
-                    {
-                        Console.WriteLine("    A   B   C   D   E   F");
-                        Console.WriteLine("  =========================");
-                    }
-                }
+        ////public static void PrintBoard(OthelloBoard i_OthelloBoard)
+        ////{
+        ////    for (int i = 0; i < i_OthelloBoard.m_BoardSize; i++)
+        ////    {
+        ////        if (i == 0)
+        ////        {
+        ////            if (i_OthelloBoard.m_BoardSize == 8)
+        ////            {
+        ////                Console.WriteLine("    A   B   C   D   E   F   G   H");
+        ////                Console.WriteLine("  =================================");
+        ////            }
+        ////            else
+        ////            {
+        ////                Console.WriteLine("    A   B   C   D   E   F");
+        ////                Console.WriteLine("  =========================");
+        ////            }
+        ////        }
 
-                for (char c = 'A'; c < (char)('A' + i_OthelloBoard.m_BoardSize); c++)
-                {
-                    if (c == 'A')
-                    {
-                        string outputMessage = string.Format("{0} | {1} |", i + 1, i_OthelloBoard.m_OthelloBoard[i, c - 'A'].M_CellValue);
-                        Console.Write(outputMessage);
-                    }
-                    else
-                    {
-                        string outputMessage = string.Format(" {0} |", i_OthelloBoard.m_OthelloBoard[i, c - 'A'].M_CellValue);
-                        Console.Write(outputMessage);
-                    }
-                }
+        ////        for (char c = 'A'; c < (char)('A' + i_OthelloBoard.m_BoardSize); c++)
+        ////        {
+        ////            if (c == 'A')
+        ////            {
+        ////                string outputMessage = string.Format("{0} | {1} |", i + 1, i_OthelloBoard.m_OthelloBoard[i, c - 'A'].M_CellValue);
+        ////                Console.Write(outputMessage);
+        ////            }
+        ////            else
+        ////            {
+        ////                string outputMessage = string.Format(" {0} |", i_OthelloBoard.m_OthelloBoard[i, c - 'A'].M_CellValue);
+        ////                Console.Write(outputMessage);
+        ////            }
+        ////        }
 
-                if (i_OthelloBoard.m_BoardSize == 8)
-                {
-                    Console.WriteLine("\n  =================================");
-                }
-                else
-                {
-                    Console.WriteLine("\n  =========================");
-                }
-            }
+        ////        if (i_OthelloBoard.m_BoardSize == 8)
+        ////        {
+        ////            Console.WriteLine("\n  =================================");
+        ////        }
+        ////        else
+        ////        {
+        ////            Console.WriteLine("\n  =========================");
+        ////        }
+        ////    }
 
-            Console.WriteLine();
-        }
+        ////    Console.WriteLine();
+        ////}
 
-        public static bool IsValidDiscPlacement(OthelloBoard i_OthelloBoard, int i_Longtitude, char i_Latitude, GameData.Player i_Player)
+        public static bool IsValidDiscPlacement(OthelloBoard i_OthelloBoard, int i_Longtitude, char i_Latitude, OthelloPlayer i_Player)
         {
             return i_OthelloBoard.M_OthelloBoard[i_Longtitude - 1, i_Latitude - 'A'].M_IsAvailableCell == true;
         }
@@ -165,8 +165,8 @@ namespace GameData
         public class Point
         {
             private bool m_IsAvailableCell = false;
-            private int m_Longtitude;
-            private char m_Latitude;
+            private int m_Longtitude;//oreh
+            private char m_Latitude;//rohav
             private char m_CellValue;
             public const char k_Black = 'X';
             public const char k_White = 'O';
@@ -229,6 +229,14 @@ namespace GameData
                 {
                     m_IsAvailableCell = value;
                 }
+            }
+
+            public override string ToString() //well have to check if it works properly.
+            {
+                string o_PointInString = "pictureBox";
+                o_PointInString += ((this.m_Longtitude) + 'A');
+                o_PointInString += (((this.m_Latitude)+1).ToString());
+                return o_PointInString;
             }
         }
     }

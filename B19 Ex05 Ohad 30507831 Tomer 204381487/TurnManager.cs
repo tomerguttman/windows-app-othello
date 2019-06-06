@@ -24,43 +24,42 @@ namespace GameLogic
             UpLeft,
         }
 
-        public static void OthelloTurnManager(Game_Data.Board io_OthelloBoard, Player i_Player, ref int io_ConsecutiveNumberOfTurnsWithoutValidMoves)
+        public static void OthelloTurnManager(GameData.OthelloBoard io_OthelloBoard, GameData.OthelloPlayer i_Player, ref int io_ConsecutiveNumberOfTurnsWithoutValidMoves)
         {
-            Board tempOthelloBoard = new Board(io_OthelloBoard);
-            Board.Point playersPointChoice;
-            List<Board.Point> validPointsToChooseFrom = new List<Board.Point>();
+            GameData.OthelloBoard tempOthelloBoard = new GameData.OthelloBoard(io_OthelloBoard);
+            GameData.OthelloBoard.Point playersPointChoice;
+            List<GameData.OthelloBoard.Point> validPointsToChooseFrom = new List<GameData.OthelloBoard.Point>();
 
-            if (UpdateValidCells(tempOthelloBoard, i_Player.M_Color, validPointsToChooseFrom) > 0)
+            if (UpdateValidCells(tempOthelloBoard, i_Player.Color, validPointsToChooseFrom) > 0)
             {
-                playersPointChoice = UI.Console.RecievePointFromPlayer(tempOthelloBoard, i_Player, validPointsToChooseFrom);
-                playersPointChoice.M_CellValue = i_Player.M_Color;
+                playersPointChoice = UI.Console.RecievePointFromPlayer(tempOthelloBoard, i_Player, validPointsToChooseFrom);//clicked PictureBox in the form
+                playersPointChoice.M_CellValue = i_Player.Color;
                 validPointsToChooseFrom.Clear();
-                io_OthelloBoard.M_OthelloBoard[playersPointChoice.M_Longtitude - 1, (int)playersPointChoice.M_Latitude - 'A'].M_CellValue = i_Player.M_Color;
+                io_OthelloBoard.M_OthelloBoard[playersPointChoice.M_Longtitude - 1, (int)playersPointChoice.M_Latitude - 'A'].M_CellValue = i_Player.Color;
                 io_OthelloBoard.M_OthelloBoard[playersPointChoice.M_Longtitude - 1, (int)playersPointChoice.M_Latitude - 'A'].M_IsAvailableCell = false;
                 UpdateBoardAfterDiscPlacement(io_OthelloBoard, playersPointChoice);
 
-                if (i_Player.M_PlayerName.Equals("PC") == true)
+                if (i_Player.PlayerNumber == 3)
                 {
                     System.Threading.Thread.Sleep(2000);
                 }
 
-                UI.Console.ClearScreen();
-                UI.Console.PrintBoard(io_OthelloBoard);
+                //UI.Console.PrintBoard(io_OthelloBoard);
                 io_ConsecutiveNumberOfTurnsWithoutValidMoves = 0;
             }
             else
             {
-                string message = string.Format("{0} has no optional moves!", i_Player.M_PlayerName);
-                System.Console.WriteLine(message);
+                //string message = string.Format("{0} has no optional moves!", i_Player.M_PlayerName);
+                //System.Console.WriteLine(message);
                 io_ConsecutiveNumberOfTurnsWithoutValidMoves += 1;
             }
         }
 
-        public static int UpdateValidCells(Board io_OthelloBoard, char i_PlayerColor, List<Board.Point> io_ValidPointsToChooseFrom)
+        public static int UpdateValidCells(GameData.OthelloBoard io_OthelloBoard, char i_PlayerColor, List<GameData.OthelloBoard.Point> io_ValidPointsToChooseFrom)
         {
             int noValueInt = 0;
 
-            foreach (Board.Point currentPoint in io_OthelloBoard.M_OthelloBoard)
+            foreach (GameData.OthelloBoard.Point currentPoint in io_OthelloBoard.M_OthelloBoard)
             {
                 if (currentPoint.M_CellValue == i_PlayerColor)
                 {
@@ -74,7 +73,7 @@ namespace GameLogic
             return io_ValidPointsToChooseFrom.Count;
         }
 
-        public static void EightWayCellsCheckAndUpdateValidityOrChangeCellsColor(Board io_OthelloBoard, Board.Point i_CurrentPoint, eDirection i_Direction, string i_UpdateValidityOrChangeColor, List<Board.Point> io_ValidPointsToChooseFrom, ref int io_NumberOfRivalDiscsToChangeIfNeeded)
+        public static void EightWayCellsCheckAndUpdateValidityOrChangeCellsColor(GameData.OthelloBoard io_OthelloBoard, GameData.OthelloBoard.Point i_CurrentPoint, eDirection i_Direction, string i_UpdateValidityOrChangeColor, List<GameData.OthelloBoard.Point> io_ValidPointsToChooseFrom, ref int io_NumberOfRivalDiscsToChangeIfNeeded)
         {
             switch (i_Direction)
             {
@@ -200,7 +199,7 @@ namespace GameLogic
             }
         }
 
-        public static void UpdateCellsValidity(Board io_OthelloBoard, Board.Point i_CurrentPoint, int i_LongtitudeValue, int i_LatitudeValue, List<Board.Point> io_ValidPointsToChooseFrom)
+        public static void UpdateCellsValidity(GameData.OthelloBoard io_OthelloBoard, GameData.OthelloBoard.Point i_CurrentPoint, int i_LongtitudeValue, int i_LatitudeValue, List<GameData.OthelloBoard.Point> io_ValidPointsToChooseFrom)
         {
             int latitude = (i_CurrentPoint.M_Latitude - 'A') + i_LatitudeValue;
             int longtitude = i_CurrentPoint.M_Longtitude - 1 + i_LongtitudeValue;
@@ -213,7 +212,7 @@ namespace GameLogic
                 isPotentialValidPoint = true;
             }
 
-            if (latitude >= 0 && latitude < io_OthelloBoard.M_BoardSize && longtitude >= 0 && longtitude < io_OthelloBoard.M_BoardSize && isPotentialValidPoint == true && io_OthelloBoard.M_OthelloBoard[longtitude, latitude].M_CellValue == Board.Point.k_Empty)
+            if (latitude >= 0 && latitude < io_OthelloBoard.M_BoardSize && longtitude >= 0 && longtitude < io_OthelloBoard.M_BoardSize && isPotentialValidPoint == true && io_OthelloBoard.M_OthelloBoard[longtitude, latitude].M_CellValue == GameData.OthelloBoard.Point.k_Empty)
             {
                 if (io_OthelloBoard.M_OthelloBoard[longtitude, latitude].M_IsAvailableCell == false)
                 {
@@ -223,12 +222,12 @@ namespace GameLogic
             }
         }
 
-        public static bool IsPointOnBoardAndRivalDisc(Board i_OthelloBoard, int i_Longtitude, int i_Latitude, char i_PlayerColor)
+        public static bool IsPointOnBoardAndRivalDisc(GameData.OthelloBoard i_OthelloBoard, int i_Longtitude, int i_Latitude, char i_PlayerColor)
         {
-            return i_Latitude >= 0 && i_Latitude < i_OthelloBoard.M_BoardSize && i_Longtitude >= 0 && i_Longtitude < i_OthelloBoard.M_BoardSize && i_OthelloBoard.M_OthelloBoard[i_Longtitude, i_Latitude].M_CellValue != i_PlayerColor && i_OthelloBoard.M_OthelloBoard[i_Longtitude, i_Latitude].M_CellValue != Board.Point.k_Empty;
+            return i_Latitude >= 0 && i_Latitude < i_OthelloBoard.M_BoardSize && i_Longtitude >= 0 && i_Longtitude < i_OthelloBoard.M_BoardSize && i_OthelloBoard.M_OthelloBoard[i_Longtitude, i_Latitude].M_CellValue != i_PlayerColor && i_OthelloBoard.M_OthelloBoard[i_Longtitude, i_Latitude].M_CellValue != GameData.OthelloBoard.Point.k_Empty;
         }
 
-        public static bool IsRivalDiscChangeNeeded(Board io_OthelloBoard, Board.Point i_CurrentPoint, int i_LongtitudeValue, int i_LatitudeValue, ref int io_NumberOfRivalDiscsToChange)
+        public static bool IsRivalDiscChangeNeeded(GameData.OthelloBoard io_OthelloBoard, GameData.OthelloBoard.Point i_CurrentPoint, int i_LongtitudeValue, int i_LatitudeValue, ref int io_NumberOfRivalDiscsToChange)
         {
             int latitude = (i_CurrentPoint.M_Latitude - 'A') + i_LatitudeValue;
             int longtitude = i_CurrentPoint.M_Longtitude - 1 + i_LongtitudeValue;
@@ -251,7 +250,7 @@ namespace GameLogic
             return isChangeOfDiscsNeeded;
         }
 
-        internal static void ChangeDiscsColor(Board io_OthelloBoard, Board.Point i_CurrentPoint, int i_LongtitudeVal, int i_LatitudeVal, int i_NumberOfRivalDiscsToChange)
+        internal static void ChangeDiscsColor(GameData.OthelloBoard io_OthelloBoard, GameData.OthelloBoard.Point i_CurrentPoint, int i_LongtitudeVal, int i_LatitudeVal, int i_NumberOfRivalDiscsToChange)
         {
             int startLongtitude = i_CurrentPoint.M_Longtitude - 1;
             int startLatitude = i_CurrentPoint.M_Latitude - 'A';
@@ -262,10 +261,10 @@ namespace GameLogic
             }
         }
 
-        internal static void UpdateBoardAfterDiscPlacement(Board io_OthelloBoard, Board.Point i_UserPointChosen)
+        internal static void UpdateBoardAfterDiscPlacement(GameData.OthelloBoard io_OthelloBoard, GameData.OthelloBoard.Point i_UserPointChosen)
         {
             int numberOfDiscsToChange = 0;
-            List<Board.Point> emptyList = new List<Board.Point>();
+            List<GameData.OthelloBoard.Point> emptyList = new List<GameData.OthelloBoard.Point>();
 
             for (eDirection direction = eDirection.Up; direction <= eDirection.UpLeft; direction++)
             {

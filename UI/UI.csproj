@@ -34,12 +34,35 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BoardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BoardForm.Designer.cs">
+      <DependentUpon>BoardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BoardForm10x10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BoardForm10x10.Designer.cs">
+      <DependentUpon>BoardForm10x10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BoardForm12x12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BoardForm12x12.Designer.cs">
+      <DependentUpon>BoardForm12x12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BoardForm8x8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BoardForm8x8.Designer.cs">
+      <DependentUpon>BoardForm8x8.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -48,6 +71,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BoardForm.resx">
+      <DependentUpon>BoardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BoardForm10x10.resx">
+      <DependentUpon>BoardForm10x10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BoardForm12x12.resx">
+      <DependentUpon>BoardForm12x12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BoardForm8x8.resx">
+      <DependentUpon>BoardForm8x8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -56,6 +94,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -66,6 +105,43 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\B19 Ex05 Ohad 30507831 Tomer 204381487\GameLogic.csproj">
+      <Project>{9b4e291c-6d98-4449-b8f5-5fcd90839579}</Project>
+      <Name>GameLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GameData\GameData.csproj">
+      <Project>{a7b2c0ad-e4b0-4d8d-8cc1-6f4edd69a066}</Project>
+      <Name>GameData</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CoinYellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CoinRed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refreshBlue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refreshGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CoinRed1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CoinYellow1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refreshBlue1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refreshGreen1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uk.co.alexcale.othello.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
