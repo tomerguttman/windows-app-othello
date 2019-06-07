@@ -5,3 +5,10 @@ C:\Users\Tomer\Documents\Computer Science Programming\.NET Framework C#\Task1\Wi
 C:\Users\Tomer\Documents\Computer Science Programming\.NET Framework C#\Task1\WindowsApp_Othello\B19 Ex05 Ohad 30507831 Tomer 204381487\bin\Debug\GameData.pdb
 C:\Users\Tomer\Documents\Computer Science Programming\.NET Framework C#\Task1\WindowsApp_Othello\B19 Ex05 Ohad 30507831 Tomer 204381487\obj\Debug\GameLogic.dll
 C:\Users\Tomer\Documents\Computer Science Programming\.NET Framework C#\Task1\WindowsApp_Othello\B19 Ex05 Ohad 30507831 Tomer 204381487\obj\Debug\GameLogic.pdb
+C:\Users\ohad\Desktop\GitHub\WindowsApp_Othello\B19 Ex05 Ohad 30507831 Tomer 204381487\bin\Debug\GameLogic.dll
+C:\Users\ohad\Desktop\GitHub\WindowsApp_Othello\B19 Ex05 Ohad 30507831 Tomer 204381487\bin\Debug\GameLogic.pdb
+C:\Users\ohad\Desktop\GitHub\WindowsApp_Othello\B19 Ex05 Ohad 30507831 Tomer 204381487\bin\Debug\GameData.dll
+C:\Users\ohad\Desktop\GitHub\WindowsApp_Othello\B19 Ex05 Ohad 30507831 Tomer 204381487\bin\Debug\GameData.pdb
+C:\Users\ohad\Desktop\GitHub\WindowsApp_Othello\B19 Ex05 Ohad 30507831 Tomer 204381487\obj\Debug\GameLogic.csprojResolveAssemblyReference.cache
+C:\Users\ohad\Desktop\GitHub\WindowsApp_Othello\B19 Ex05 Ohad 30507831 Tomer 204381487\obj\Debug\GameLogic.dll
+C:\Users\ohad\Desktop\GitHub\WindowsApp_Othello\B19 Ex05 Ohad 30507831 Tomer 204381487\obj\Debug\GameLogic.pdb

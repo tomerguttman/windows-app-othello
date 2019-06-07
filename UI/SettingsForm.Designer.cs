@@ -35,9 +35,10 @@
             // 
             // ButtonBoardSize
             // 
-            this.ButtonBoardSize.Location = new System.Drawing.Point(12, 12);
+            this.ButtonBoardSize.Location = new System.Drawing.Point(9, 10);
+            this.ButtonBoardSize.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ButtonBoardSize.Name = "ButtonBoardSize";
-            this.ButtonBoardSize.Size = new System.Drawing.Size(344, 57);
+            this.ButtonBoardSize.Size = new System.Drawing.Size(258, 46);
             this.ButtonBoardSize.TabIndex = 0;
             this.ButtonBoardSize.Text = "Board size: 6x6 (Click to increase)";
             this.ButtonBoardSize.UseVisualStyleBackColor = true;
@@ -46,9 +47,10 @@
             // ButtonAgainstPC
             // 
             this.ButtonAgainstPC.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.ButtonAgainstPC.Location = new System.Drawing.Point(12, 75);
+            this.ButtonAgainstPC.Location = new System.Drawing.Point(9, 61);
+            this.ButtonAgainstPC.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ButtonAgainstPC.Name = "ButtonAgainstPC";
-            this.ButtonAgainstPC.Size = new System.Drawing.Size(160, 61);
+            this.ButtonAgainstPC.Size = new System.Drawing.Size(120, 50);
             this.ButtonAgainstPC.TabIndex = 1;
             this.ButtonAgainstPC.Text = "Play against the computer";
             this.ButtonAgainstPC.UseVisualStyleBackColor = true;
@@ -57,29 +59,32 @@
             // ButtonAgainstFriend
             // 
             this.ButtonAgainstFriend.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.ButtonAgainstFriend.Location = new System.Drawing.Point(178, 75);
+            this.ButtonAgainstFriend.Location = new System.Drawing.Point(134, 61);
+            this.ButtonAgainstFriend.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ButtonAgainstFriend.Name = "ButtonAgainstFriend";
-            this.ButtonAgainstFriend.Size = new System.Drawing.Size(178, 61);
+            this.ButtonAgainstFriend.Size = new System.Drawing.Size(134, 50);
             this.ButtonAgainstFriend.TabIndex = 2;
             this.ButtonAgainstFriend.Text = "Play against your friend";
             this.ButtonAgainstFriend.UseVisualStyleBackColor = true;
             this.ButtonAgainstFriend.Click += new System.EventHandler(this.ButtonAgainstFriend_Click);
             // 
-            // Form1
+            // SettingsForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(368, 148);
+            this.ClientSize = new System.Drawing.Size(278, 127);
             this.Controls.Add(this.ButtonAgainstFriend);
             this.Controls.Add(this.ButtonAgainstPC);
             this.Controls.Add(this.ButtonBoardSize);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(386, 195);
+            this.MaximumSize = new System.Drawing.Size(294, 166);
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(386, 195);
-            this.Name = "Form1";
+            this.MinimumSize = new System.Drawing.Size(294, 166);
+            this.Name = "SettingsForm";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Othello - Game Settings";
             this.ResumeLayout(false);
 

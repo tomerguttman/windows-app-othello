@@ -58,15 +58,15 @@ namespace UI
                 returnOthelloBoard = (i_OthelloForm as BoardForm8x8).OthelloBoard;
             }
 
-            //if (i_OthelloForm is BoardForm10x10)
-            //{
-            //    returnOthelloBoard = (i_OthelloForm as BoardForm10x10).OthelloBoard;
-            //}
+            if (i_OthelloForm is BoardForm10x10)
+            {
+                returnOthelloBoard = (i_OthelloForm as BoardForm10x10).OthelloBoard;
+            }
 
-            //if (i_OthelloForm is BoardForm12x12)
-            //{
-            //    returnOthelloBoard = (i_OthelloForm as BoardForm12x12).OthelloBoard;
-            //}
+            if (i_OthelloForm is BoardForm12x12)
+            {
+                returnOthelloBoard = (i_OthelloForm as BoardForm12x12).OthelloBoard;
+            }
 
             return returnOthelloBoard;
         }
@@ -123,11 +123,11 @@ namespace UI
                     break;
 
                 case 10:
-                    //o_ReturnForm = new BoardForm10x10(i_numberOfPlayers);  ///need to update ctor
+                    o_ReturnForm = new BoardForm10x10(i_numberOfPlayers);  ///need to update ctor
                     break;
 
                 case 12:
-                    //o_ReturnForm = new BoardForm12x12(i_numberOfPlayers);   ///need to update ctor
+                    o_ReturnForm = new BoardForm12x12(i_numberOfPlayers);   ///need to update ctor
                     break;
             }
 

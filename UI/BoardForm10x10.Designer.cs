@@ -30,6 +30,7 @@ namespace UI
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BoardForm10x10));
             this.pictureBox10D = new System.Windows.Forms.PictureBox();
             this.pictureBox10E = new System.Windows.Forms.PictureBox();
             this.pictureBox10F = new System.Windows.Forms.PictureBox();
@@ -130,6 +131,7 @@ namespace UI
             this.pictureBox1J = new System.Windows.Forms.PictureBox();
             this.pictureBox1B = new System.Windows.Forms.PictureBox();
             this.pictureBox1A = new System.Windows.Forms.PictureBox();
+            this.ButtonGameOver = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10D)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10E)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10F)).BeginInit();
@@ -236,9 +238,10 @@ namespace UI
             // 
             this.pictureBox10D.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox10D.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox10D.Location = new System.Drawing.Point(154, 427);
+            this.pictureBox10D.Location = new System.Drawing.Point(116, 347);
+            this.pictureBox10D.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox10D.Name = "pictureBox10D";
-            this.pictureBox10D.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox10D.Size = new System.Drawing.Size(30, 33);
             this.pictureBox10D.TabIndex = 100;
             this.pictureBox10D.TabStop = false;
             this.pictureBox10D.Click += new System.EventHandler(this.PictureBox_Click);
@@ -247,9 +250,10 @@ namespace UI
             // 
             this.pictureBox10E.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox10E.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox10E.Location = new System.Drawing.Point(200, 427);
+            this.pictureBox10E.Location = new System.Drawing.Point(150, 347);
+            this.pictureBox10E.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox10E.Name = "pictureBox10E";
-            this.pictureBox10E.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox10E.Size = new System.Drawing.Size(30, 33);
             this.pictureBox10E.TabIndex = 99;
             this.pictureBox10E.TabStop = false;
             this.pictureBox10E.Click += new System.EventHandler(this.PictureBox_Click);
@@ -258,9 +262,10 @@ namespace UI
             // 
             this.pictureBox10F.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox10F.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox10F.Location = new System.Drawing.Point(246, 427);
+            this.pictureBox10F.Location = new System.Drawing.Point(184, 347);
+            this.pictureBox10F.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox10F.Name = "pictureBox10F";
-            this.pictureBox10F.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox10F.Size = new System.Drawing.Size(30, 33);
             this.pictureBox10F.TabIndex = 98;
             this.pictureBox10F.TabStop = false;
             this.pictureBox10F.Click += new System.EventHandler(this.PictureBox_Click);
@@ -269,9 +274,10 @@ namespace UI
             // 
             this.pictureBox10G.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox10G.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox10G.Location = new System.Drawing.Point(292, 427);
+            this.pictureBox10G.Location = new System.Drawing.Point(219, 347);
+            this.pictureBox10G.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox10G.Name = "pictureBox10G";
-            this.pictureBox10G.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox10G.Size = new System.Drawing.Size(30, 33);
             this.pictureBox10G.TabIndex = 97;
             this.pictureBox10G.TabStop = false;
             this.pictureBox10G.Click += new System.EventHandler(this.PictureBox_Click);
@@ -280,9 +286,10 @@ namespace UI
             // 
             this.pictureBox10C.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox10C.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox10C.Location = new System.Drawing.Point(108, 427);
+            this.pictureBox10C.Location = new System.Drawing.Point(81, 347);
+            this.pictureBox10C.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox10C.Name = "pictureBox10C";
-            this.pictureBox10C.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox10C.Size = new System.Drawing.Size(30, 33);
             this.pictureBox10C.TabIndex = 96;
             this.pictureBox10C.TabStop = false;
             this.pictureBox10C.Click += new System.EventHandler(this.PictureBox_Click);
@@ -291,9 +298,10 @@ namespace UI
             // 
             this.pictureBox10H.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox10H.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox10H.Location = new System.Drawing.Point(338, 427);
+            this.pictureBox10H.Location = new System.Drawing.Point(254, 347);
+            this.pictureBox10H.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox10H.Name = "pictureBox10H";
-            this.pictureBox10H.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox10H.Size = new System.Drawing.Size(30, 33);
             this.pictureBox10H.TabIndex = 95;
             this.pictureBox10H.TabStop = false;
             this.pictureBox10H.Click += new System.EventHandler(this.PictureBox_Click);
@@ -302,9 +310,10 @@ namespace UI
             // 
             this.pictureBox10I.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox10I.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox10I.Location = new System.Drawing.Point(384, 427);
+            this.pictureBox10I.Location = new System.Drawing.Point(288, 347);
+            this.pictureBox10I.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox10I.Name = "pictureBox10I";
-            this.pictureBox10I.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox10I.Size = new System.Drawing.Size(30, 33);
             this.pictureBox10I.TabIndex = 94;
             this.pictureBox10I.TabStop = false;
             this.pictureBox10I.Click += new System.EventHandler(this.PictureBox_Click);
@@ -313,9 +322,10 @@ namespace UI
             // 
             this.pictureBox10J.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox10J.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox10J.Location = new System.Drawing.Point(430, 427);
+            this.pictureBox10J.Location = new System.Drawing.Point(322, 347);
+            this.pictureBox10J.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox10J.Name = "pictureBox10J";
-            this.pictureBox10J.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox10J.Size = new System.Drawing.Size(30, 33);
             this.pictureBox10J.TabIndex = 93;
             this.pictureBox10J.TabStop = false;
             this.pictureBox10J.Click += new System.EventHandler(this.PictureBox_Click);
@@ -324,9 +334,10 @@ namespace UI
             // 
             this.pictureBox10B.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox10B.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox10B.Location = new System.Drawing.Point(62, 427);
+            this.pictureBox10B.Location = new System.Drawing.Point(46, 347);
+            this.pictureBox10B.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox10B.Name = "pictureBox10B";
-            this.pictureBox10B.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox10B.Size = new System.Drawing.Size(30, 33);
             this.pictureBox10B.TabIndex = 92;
             this.pictureBox10B.TabStop = false;
             this.pictureBox10B.Click += new System.EventHandler(this.PictureBox_Click);
@@ -335,9 +346,10 @@ namespace UI
             // 
             this.pictureBox10A.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox10A.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox10A.Location = new System.Drawing.Point(16, 427);
+            this.pictureBox10A.Location = new System.Drawing.Point(12, 347);
+            this.pictureBox10A.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox10A.Name = "pictureBox10A";
-            this.pictureBox10A.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox10A.Size = new System.Drawing.Size(30, 33);
             this.pictureBox10A.TabIndex = 91;
             this.pictureBox10A.TabStop = false;
             this.pictureBox10A.Click += new System.EventHandler(this.PictureBox_Click);
@@ -346,9 +358,10 @@ namespace UI
             // 
             this.pictureBox2D.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2D.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox2D.Location = new System.Drawing.Point(154, 59);
+            this.pictureBox2D.Location = new System.Drawing.Point(116, 48);
+            this.pictureBox2D.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2D.Name = "pictureBox2D";
-            this.pictureBox2D.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox2D.Size = new System.Drawing.Size(30, 33);
             this.pictureBox2D.TabIndex = 90;
             this.pictureBox2D.TabStop = false;
             this.pictureBox2D.Click += new System.EventHandler(this.PictureBox_Click);
@@ -357,9 +370,10 @@ namespace UI
             // 
             this.pictureBox2E.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2E.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox2E.Location = new System.Drawing.Point(200, 59);
+            this.pictureBox2E.Location = new System.Drawing.Point(150, 48);
+            this.pictureBox2E.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2E.Name = "pictureBox2E";
-            this.pictureBox2E.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox2E.Size = new System.Drawing.Size(30, 33);
             this.pictureBox2E.TabIndex = 89;
             this.pictureBox2E.TabStop = false;
             this.pictureBox2E.Click += new System.EventHandler(this.PictureBox_Click);
@@ -368,9 +382,10 @@ namespace UI
             // 
             this.pictureBox2F.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2F.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox2F.Location = new System.Drawing.Point(246, 59);
+            this.pictureBox2F.Location = new System.Drawing.Point(184, 48);
+            this.pictureBox2F.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2F.Name = "pictureBox2F";
-            this.pictureBox2F.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox2F.Size = new System.Drawing.Size(30, 33);
             this.pictureBox2F.TabIndex = 88;
             this.pictureBox2F.TabStop = false;
             this.pictureBox2F.Click += new System.EventHandler(this.PictureBox_Click);
@@ -379,9 +394,10 @@ namespace UI
             // 
             this.pictureBox2G.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2G.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox2G.Location = new System.Drawing.Point(292, 59);
+            this.pictureBox2G.Location = new System.Drawing.Point(219, 48);
+            this.pictureBox2G.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2G.Name = "pictureBox2G";
-            this.pictureBox2G.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox2G.Size = new System.Drawing.Size(30, 33);
             this.pictureBox2G.TabIndex = 87;
             this.pictureBox2G.TabStop = false;
             this.pictureBox2G.Click += new System.EventHandler(this.PictureBox_Click);
@@ -390,9 +406,10 @@ namespace UI
             // 
             this.pictureBox2C.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2C.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox2C.Location = new System.Drawing.Point(108, 59);
+            this.pictureBox2C.Location = new System.Drawing.Point(81, 48);
+            this.pictureBox2C.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2C.Name = "pictureBox2C";
-            this.pictureBox2C.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox2C.Size = new System.Drawing.Size(30, 33);
             this.pictureBox2C.TabIndex = 86;
             this.pictureBox2C.TabStop = false;
             this.pictureBox2C.Click += new System.EventHandler(this.PictureBox_Click);
@@ -401,9 +418,10 @@ namespace UI
             // 
             this.pictureBox2H.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2H.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox2H.Location = new System.Drawing.Point(338, 59);
+            this.pictureBox2H.Location = new System.Drawing.Point(254, 48);
+            this.pictureBox2H.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2H.Name = "pictureBox2H";
-            this.pictureBox2H.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox2H.Size = new System.Drawing.Size(30, 33);
             this.pictureBox2H.TabIndex = 85;
             this.pictureBox2H.TabStop = false;
             this.pictureBox2H.Click += new System.EventHandler(this.PictureBox_Click);
@@ -412,9 +430,10 @@ namespace UI
             // 
             this.pictureBox2I.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2I.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox2I.Location = new System.Drawing.Point(384, 59);
+            this.pictureBox2I.Location = new System.Drawing.Point(288, 48);
+            this.pictureBox2I.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2I.Name = "pictureBox2I";
-            this.pictureBox2I.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox2I.Size = new System.Drawing.Size(30, 33);
             this.pictureBox2I.TabIndex = 84;
             this.pictureBox2I.TabStop = false;
             this.pictureBox2I.Click += new System.EventHandler(this.PictureBox_Click);
@@ -423,9 +442,10 @@ namespace UI
             // 
             this.pictureBox2J.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2J.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox2J.Location = new System.Drawing.Point(430, 59);
+            this.pictureBox2J.Location = new System.Drawing.Point(322, 48);
+            this.pictureBox2J.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2J.Name = "pictureBox2J";
-            this.pictureBox2J.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox2J.Size = new System.Drawing.Size(30, 33);
             this.pictureBox2J.TabIndex = 83;
             this.pictureBox2J.TabStop = false;
             this.pictureBox2J.Click += new System.EventHandler(this.PictureBox_Click);
@@ -434,9 +454,10 @@ namespace UI
             // 
             this.pictureBox2B.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2B.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox2B.Location = new System.Drawing.Point(62, 59);
+            this.pictureBox2B.Location = new System.Drawing.Point(46, 48);
+            this.pictureBox2B.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2B.Name = "pictureBox2B";
-            this.pictureBox2B.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox2B.Size = new System.Drawing.Size(30, 33);
             this.pictureBox2B.TabIndex = 82;
             this.pictureBox2B.TabStop = false;
             this.pictureBox2B.Click += new System.EventHandler(this.PictureBox_Click);
@@ -445,9 +466,10 @@ namespace UI
             // 
             this.pictureBox2A.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2A.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox2A.Location = new System.Drawing.Point(16, 59);
+            this.pictureBox2A.Location = new System.Drawing.Point(12, 48);
+            this.pictureBox2A.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2A.Name = "pictureBox2A";
-            this.pictureBox2A.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox2A.Size = new System.Drawing.Size(30, 33);
             this.pictureBox2A.TabIndex = 81;
             this.pictureBox2A.TabStop = false;
             this.pictureBox2A.Click += new System.EventHandler(this.PictureBox_Click);
@@ -456,9 +478,10 @@ namespace UI
             // 
             this.pictureBox3D.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox3D.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox3D.Location = new System.Drawing.Point(154, 105);
+            this.pictureBox3D.Location = new System.Drawing.Point(116, 85);
+            this.pictureBox3D.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3D.Name = "pictureBox3D";
-            this.pictureBox3D.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox3D.Size = new System.Drawing.Size(30, 33);
             this.pictureBox3D.TabIndex = 80;
             this.pictureBox3D.TabStop = false;
             this.pictureBox3D.Click += new System.EventHandler(this.PictureBox_Click);
@@ -467,9 +490,10 @@ namespace UI
             // 
             this.pictureBox3E.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox3E.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox3E.Location = new System.Drawing.Point(200, 105);
+            this.pictureBox3E.Location = new System.Drawing.Point(150, 85);
+            this.pictureBox3E.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3E.Name = "pictureBox3E";
-            this.pictureBox3E.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox3E.Size = new System.Drawing.Size(30, 33);
             this.pictureBox3E.TabIndex = 79;
             this.pictureBox3E.TabStop = false;
             this.pictureBox3E.Click += new System.EventHandler(this.PictureBox_Click);
@@ -478,9 +502,10 @@ namespace UI
             // 
             this.pictureBox3F.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox3F.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox3F.Location = new System.Drawing.Point(246, 105);
+            this.pictureBox3F.Location = new System.Drawing.Point(184, 85);
+            this.pictureBox3F.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3F.Name = "pictureBox3F";
-            this.pictureBox3F.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox3F.Size = new System.Drawing.Size(30, 33);
             this.pictureBox3F.TabIndex = 78;
             this.pictureBox3F.TabStop = false;
             this.pictureBox3F.Click += new System.EventHandler(this.PictureBox_Click);
@@ -489,9 +514,10 @@ namespace UI
             // 
             this.pictureBox3G.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox3G.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox3G.Location = new System.Drawing.Point(292, 105);
+            this.pictureBox3G.Location = new System.Drawing.Point(219, 85);
+            this.pictureBox3G.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3G.Name = "pictureBox3G";
-            this.pictureBox3G.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox3G.Size = new System.Drawing.Size(30, 33);
             this.pictureBox3G.TabIndex = 77;
             this.pictureBox3G.TabStop = false;
             this.pictureBox3G.Click += new System.EventHandler(this.PictureBox_Click);
@@ -500,9 +526,10 @@ namespace UI
             // 
             this.pictureBox3C.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox3C.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox3C.Location = new System.Drawing.Point(108, 105);
+            this.pictureBox3C.Location = new System.Drawing.Point(81, 85);
+            this.pictureBox3C.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3C.Name = "pictureBox3C";
-            this.pictureBox3C.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox3C.Size = new System.Drawing.Size(30, 33);
             this.pictureBox3C.TabIndex = 76;
             this.pictureBox3C.TabStop = false;
             this.pictureBox3C.Click += new System.EventHandler(this.PictureBox_Click);
@@ -511,9 +538,10 @@ namespace UI
             // 
             this.pictureBox3H.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox3H.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox3H.Location = new System.Drawing.Point(338, 105);
+            this.pictureBox3H.Location = new System.Drawing.Point(254, 85);
+            this.pictureBox3H.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3H.Name = "pictureBox3H";
-            this.pictureBox3H.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox3H.Size = new System.Drawing.Size(30, 33);
             this.pictureBox3H.TabIndex = 75;
             this.pictureBox3H.TabStop = false;
             this.pictureBox3H.Click += new System.EventHandler(this.PictureBox_Click);
@@ -522,9 +550,10 @@ namespace UI
             // 
             this.pictureBox3I.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox3I.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox3I.Location = new System.Drawing.Point(384, 105);
+            this.pictureBox3I.Location = new System.Drawing.Point(288, 85);
+            this.pictureBox3I.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3I.Name = "pictureBox3I";
-            this.pictureBox3I.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox3I.Size = new System.Drawing.Size(30, 33);
             this.pictureBox3I.TabIndex = 74;
             this.pictureBox3I.TabStop = false;
             this.pictureBox3I.Click += new System.EventHandler(this.PictureBox_Click);
@@ -533,9 +562,10 @@ namespace UI
             // 
             this.pictureBox3J.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox3J.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox3J.Location = new System.Drawing.Point(430, 105);
+            this.pictureBox3J.Location = new System.Drawing.Point(322, 85);
+            this.pictureBox3J.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3J.Name = "pictureBox3J";
-            this.pictureBox3J.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox3J.Size = new System.Drawing.Size(30, 33);
             this.pictureBox3J.TabIndex = 73;
             this.pictureBox3J.TabStop = false;
             this.pictureBox3J.Click += new System.EventHandler(this.PictureBox_Click);
@@ -544,9 +574,10 @@ namespace UI
             // 
             this.pictureBox3B.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox3B.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox3B.Location = new System.Drawing.Point(62, 105);
+            this.pictureBox3B.Location = new System.Drawing.Point(46, 85);
+            this.pictureBox3B.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3B.Name = "pictureBox3B";
-            this.pictureBox3B.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox3B.Size = new System.Drawing.Size(30, 33);
             this.pictureBox3B.TabIndex = 72;
             this.pictureBox3B.TabStop = false;
             this.pictureBox3B.Click += new System.EventHandler(this.PictureBox_Click);
@@ -555,9 +586,10 @@ namespace UI
             // 
             this.pictureBox3A.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox3A.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox3A.Location = new System.Drawing.Point(16, 105);
+            this.pictureBox3A.Location = new System.Drawing.Point(12, 85);
+            this.pictureBox3A.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3A.Name = "pictureBox3A";
-            this.pictureBox3A.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox3A.Size = new System.Drawing.Size(30, 33);
             this.pictureBox3A.TabIndex = 71;
             this.pictureBox3A.TabStop = false;
             this.pictureBox3A.Click += new System.EventHandler(this.PictureBox_Click);
@@ -566,20 +598,23 @@ namespace UI
             // 
             this.pictureBox4D.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox4D.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox4D.Location = new System.Drawing.Point(154, 151);
+            this.pictureBox4D.Location = new System.Drawing.Point(116, 123);
+            this.pictureBox4D.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox4D.Name = "pictureBox4D";
-            this.pictureBox4D.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox4D.Size = new System.Drawing.Size(30, 33);
             this.pictureBox4D.TabIndex = 70;
             this.pictureBox4D.TabStop = false;
             this.pictureBox4D.Click += new System.EventHandler(this.PictureBox_Click);
             // 
             // pictureBox4E
             // 
+            this.pictureBox4E.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4E.BackgroundImage")));
             this.pictureBox4E.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox4E.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox4E.Location = new System.Drawing.Point(200, 151);
+            this.pictureBox4E.Location = new System.Drawing.Point(150, 123);
+            this.pictureBox4E.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox4E.Name = "pictureBox4E";
-            this.pictureBox4E.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox4E.Size = new System.Drawing.Size(30, 33);
             this.pictureBox4E.TabIndex = 69;
             this.pictureBox4E.TabStop = false;
             this.pictureBox4E.Click += new System.EventHandler(this.PictureBox_Click);
@@ -588,9 +623,10 @@ namespace UI
             // 
             this.pictureBox4F.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox4F.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox4F.Location = new System.Drawing.Point(246, 151);
+            this.pictureBox4F.Location = new System.Drawing.Point(184, 123);
+            this.pictureBox4F.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox4F.Name = "pictureBox4F";
-            this.pictureBox4F.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox4F.Size = new System.Drawing.Size(30, 33);
             this.pictureBox4F.TabIndex = 68;
             this.pictureBox4F.TabStop = false;
             this.pictureBox4F.Click += new System.EventHandler(this.PictureBox_Click);
@@ -599,9 +635,10 @@ namespace UI
             // 
             this.pictureBox4G.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox4G.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox4G.Location = new System.Drawing.Point(292, 151);
+            this.pictureBox4G.Location = new System.Drawing.Point(219, 123);
+            this.pictureBox4G.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox4G.Name = "pictureBox4G";
-            this.pictureBox4G.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox4G.Size = new System.Drawing.Size(30, 33);
             this.pictureBox4G.TabIndex = 67;
             this.pictureBox4G.TabStop = false;
             this.pictureBox4G.Click += new System.EventHandler(this.PictureBox_Click);
@@ -610,9 +647,10 @@ namespace UI
             // 
             this.pictureBox4C.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox4C.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox4C.Location = new System.Drawing.Point(108, 151);
+            this.pictureBox4C.Location = new System.Drawing.Point(81, 123);
+            this.pictureBox4C.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox4C.Name = "pictureBox4C";
-            this.pictureBox4C.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox4C.Size = new System.Drawing.Size(30, 33);
             this.pictureBox4C.TabIndex = 66;
             this.pictureBox4C.TabStop = false;
             this.pictureBox4C.Click += new System.EventHandler(this.PictureBox_Click);
@@ -621,9 +659,10 @@ namespace UI
             // 
             this.pictureBox4H.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox4H.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox4H.Location = new System.Drawing.Point(338, 151);
+            this.pictureBox4H.Location = new System.Drawing.Point(254, 123);
+            this.pictureBox4H.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox4H.Name = "pictureBox4H";
-            this.pictureBox4H.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox4H.Size = new System.Drawing.Size(30, 33);
             this.pictureBox4H.TabIndex = 65;
             this.pictureBox4H.TabStop = false;
             this.pictureBox4H.Click += new System.EventHandler(this.PictureBox_Click);
@@ -632,9 +671,10 @@ namespace UI
             // 
             this.pictureBox4I.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox4I.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox4I.Location = new System.Drawing.Point(384, 151);
+            this.pictureBox4I.Location = new System.Drawing.Point(288, 123);
+            this.pictureBox4I.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox4I.Name = "pictureBox4I";
-            this.pictureBox4I.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox4I.Size = new System.Drawing.Size(30, 33);
             this.pictureBox4I.TabIndex = 64;
             this.pictureBox4I.TabStop = false;
             this.pictureBox4I.Click += new System.EventHandler(this.PictureBox_Click);
@@ -643,9 +683,10 @@ namespace UI
             // 
             this.pictureBox4J.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox4J.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox4J.Location = new System.Drawing.Point(430, 151);
+            this.pictureBox4J.Location = new System.Drawing.Point(322, 123);
+            this.pictureBox4J.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox4J.Name = "pictureBox4J";
-            this.pictureBox4J.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox4J.Size = new System.Drawing.Size(30, 33);
             this.pictureBox4J.TabIndex = 63;
             this.pictureBox4J.TabStop = false;
             this.pictureBox4J.Click += new System.EventHandler(this.PictureBox_Click);
@@ -654,9 +695,10 @@ namespace UI
             // 
             this.pictureBox4B.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox4B.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox4B.Location = new System.Drawing.Point(62, 151);
+            this.pictureBox4B.Location = new System.Drawing.Point(46, 123);
+            this.pictureBox4B.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox4B.Name = "pictureBox4B";
-            this.pictureBox4B.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox4B.Size = new System.Drawing.Size(30, 33);
             this.pictureBox4B.TabIndex = 62;
             this.pictureBox4B.TabStop = false;
             this.pictureBox4B.Click += new System.EventHandler(this.PictureBox_Click);
@@ -665,20 +707,23 @@ namespace UI
             // 
             this.pictureBox4A.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox4A.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox4A.Location = new System.Drawing.Point(16, 151);
+            this.pictureBox4A.Location = new System.Drawing.Point(12, 123);
+            this.pictureBox4A.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox4A.Name = "pictureBox4A";
-            this.pictureBox4A.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox4A.Size = new System.Drawing.Size(30, 33);
             this.pictureBox4A.TabIndex = 61;
             this.pictureBox4A.TabStop = false;
             this.pictureBox4A.Click += new System.EventHandler(this.PictureBox_Click);
             // 
             // pictureBox5D
             // 
+            this.pictureBox5D.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5D.BackgroundImage")));
             this.pictureBox5D.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox5D.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox5D.Location = new System.Drawing.Point(154, 197);
+            this.pictureBox5D.Location = new System.Drawing.Point(116, 160);
+            this.pictureBox5D.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox5D.Name = "pictureBox5D";
-            this.pictureBox5D.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox5D.Size = new System.Drawing.Size(30, 33);
             this.pictureBox5D.TabIndex = 60;
             this.pictureBox5D.TabStop = false;
             this.pictureBox5D.Click += new System.EventHandler(this.PictureBox_Click);
@@ -688,9 +733,11 @@ namespace UI
             this.pictureBox5E.BackColor = System.Drawing.SystemColors.Control;
             this.pictureBox5E.BackgroundImage = global::UI.Properties.Resources.CoinRed1;
             this.pictureBox5E.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox5E.Location = new System.Drawing.Point(200, 197);
+            this.pictureBox5E.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox5E.Location = new System.Drawing.Point(150, 160);
+            this.pictureBox5E.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox5E.Name = "pictureBox5E";
-            this.pictureBox5E.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox5E.Size = new System.Drawing.Size(30, 32);
             this.pictureBox5E.TabIndex = 59;
             this.pictureBox5E.TabStop = false;
             this.pictureBox5E.Click += new System.EventHandler(this.PictureBox_Click);
@@ -699,9 +746,11 @@ namespace UI
             // 
             this.pictureBox5F.BackgroundImage = global::UI.Properties.Resources.CoinYellow1;
             this.pictureBox5F.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox5F.Location = new System.Drawing.Point(246, 197);
+            this.pictureBox5F.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox5F.Location = new System.Drawing.Point(184, 160);
+            this.pictureBox5F.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox5F.Name = "pictureBox5F";
-            this.pictureBox5F.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox5F.Size = new System.Drawing.Size(30, 32);
             this.pictureBox5F.TabIndex = 58;
             this.pictureBox5F.TabStop = false;
             this.pictureBox5F.Click += new System.EventHandler(this.PictureBox_Click);
@@ -710,9 +759,10 @@ namespace UI
             // 
             this.pictureBox5G.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox5G.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox5G.Location = new System.Drawing.Point(292, 197);
+            this.pictureBox5G.Location = new System.Drawing.Point(219, 160);
+            this.pictureBox5G.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox5G.Name = "pictureBox5G";
-            this.pictureBox5G.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox5G.Size = new System.Drawing.Size(30, 33);
             this.pictureBox5G.TabIndex = 57;
             this.pictureBox5G.TabStop = false;
             this.pictureBox5G.Click += new System.EventHandler(this.PictureBox_Click);
@@ -721,9 +771,10 @@ namespace UI
             // 
             this.pictureBox5C.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox5C.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox5C.Location = new System.Drawing.Point(108, 197);
+            this.pictureBox5C.Location = new System.Drawing.Point(81, 160);
+            this.pictureBox5C.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox5C.Name = "pictureBox5C";
-            this.pictureBox5C.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox5C.Size = new System.Drawing.Size(30, 33);
             this.pictureBox5C.TabIndex = 56;
             this.pictureBox5C.TabStop = false;
             this.pictureBox5C.Click += new System.EventHandler(this.PictureBox_Click);
@@ -732,9 +783,10 @@ namespace UI
             // 
             this.pictureBox5H.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox5H.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox5H.Location = new System.Drawing.Point(338, 197);
+            this.pictureBox5H.Location = new System.Drawing.Point(254, 160);
+            this.pictureBox5H.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox5H.Name = "pictureBox5H";
-            this.pictureBox5H.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox5H.Size = new System.Drawing.Size(30, 33);
             this.pictureBox5H.TabIndex = 55;
             this.pictureBox5H.TabStop = false;
             this.pictureBox5H.Click += new System.EventHandler(this.PictureBox_Click);
@@ -743,9 +795,10 @@ namespace UI
             // 
             this.pictureBox5I.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox5I.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox5I.Location = new System.Drawing.Point(384, 197);
+            this.pictureBox5I.Location = new System.Drawing.Point(288, 160);
+            this.pictureBox5I.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox5I.Name = "pictureBox5I";
-            this.pictureBox5I.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox5I.Size = new System.Drawing.Size(30, 33);
             this.pictureBox5I.TabIndex = 54;
             this.pictureBox5I.TabStop = false;
             this.pictureBox5I.Click += new System.EventHandler(this.PictureBox_Click);
@@ -754,9 +807,10 @@ namespace UI
             // 
             this.pictureBox5J.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox5J.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox5J.Location = new System.Drawing.Point(430, 197);
+            this.pictureBox5J.Location = new System.Drawing.Point(322, 160);
+            this.pictureBox5J.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox5J.Name = "pictureBox5J";
-            this.pictureBox5J.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox5J.Size = new System.Drawing.Size(30, 33);
             this.pictureBox5J.TabIndex = 53;
             this.pictureBox5J.TabStop = false;
             this.pictureBox5J.Click += new System.EventHandler(this.PictureBox_Click);
@@ -765,9 +819,10 @@ namespace UI
             // 
             this.pictureBox5B.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox5B.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox5B.Location = new System.Drawing.Point(62, 197);
+            this.pictureBox5B.Location = new System.Drawing.Point(46, 160);
+            this.pictureBox5B.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox5B.Name = "pictureBox5B";
-            this.pictureBox5B.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox5B.Size = new System.Drawing.Size(30, 33);
             this.pictureBox5B.TabIndex = 52;
             this.pictureBox5B.TabStop = false;
             this.pictureBox5B.Click += new System.EventHandler(this.PictureBox_Click);
@@ -776,9 +831,10 @@ namespace UI
             // 
             this.pictureBox5A.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox5A.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox5A.Location = new System.Drawing.Point(16, 197);
+            this.pictureBox5A.Location = new System.Drawing.Point(12, 160);
+            this.pictureBox5A.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox5A.Name = "pictureBox5A";
-            this.pictureBox5A.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox5A.Size = new System.Drawing.Size(30, 33);
             this.pictureBox5A.TabIndex = 51;
             this.pictureBox5A.TabStop = false;
             this.pictureBox5A.Click += new System.EventHandler(this.PictureBox_Click);
@@ -787,9 +843,10 @@ namespace UI
             // 
             this.pictureBox9D.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox9D.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox9D.Location = new System.Drawing.Point(154, 381);
+            this.pictureBox9D.Location = new System.Drawing.Point(116, 310);
+            this.pictureBox9D.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox9D.Name = "pictureBox9D";
-            this.pictureBox9D.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox9D.Size = new System.Drawing.Size(30, 33);
             this.pictureBox9D.TabIndex = 50;
             this.pictureBox9D.TabStop = false;
             this.pictureBox9D.Click += new System.EventHandler(this.PictureBox_Click);
@@ -798,9 +855,10 @@ namespace UI
             // 
             this.pictureBox9E.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox9E.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox9E.Location = new System.Drawing.Point(200, 381);
+            this.pictureBox9E.Location = new System.Drawing.Point(150, 310);
+            this.pictureBox9E.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox9E.Name = "pictureBox9E";
-            this.pictureBox9E.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox9E.Size = new System.Drawing.Size(30, 33);
             this.pictureBox9E.TabIndex = 49;
             this.pictureBox9E.TabStop = false;
             this.pictureBox9E.Click += new System.EventHandler(this.PictureBox_Click);
@@ -809,9 +867,10 @@ namespace UI
             // 
             this.pictureBox9F.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox9F.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox9F.Location = new System.Drawing.Point(246, 381);
+            this.pictureBox9F.Location = new System.Drawing.Point(184, 310);
+            this.pictureBox9F.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox9F.Name = "pictureBox9F";
-            this.pictureBox9F.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox9F.Size = new System.Drawing.Size(30, 33);
             this.pictureBox9F.TabIndex = 48;
             this.pictureBox9F.TabStop = false;
             this.pictureBox9F.Click += new System.EventHandler(this.PictureBox_Click);
@@ -820,9 +879,10 @@ namespace UI
             // 
             this.pictureBox9G.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox9G.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox9G.Location = new System.Drawing.Point(292, 381);
+            this.pictureBox9G.Location = new System.Drawing.Point(219, 310);
+            this.pictureBox9G.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox9G.Name = "pictureBox9G";
-            this.pictureBox9G.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox9G.Size = new System.Drawing.Size(30, 33);
             this.pictureBox9G.TabIndex = 47;
             this.pictureBox9G.TabStop = false;
             this.pictureBox9G.Click += new System.EventHandler(this.PictureBox_Click);
@@ -831,9 +891,10 @@ namespace UI
             // 
             this.pictureBox9C.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox9C.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox9C.Location = new System.Drawing.Point(108, 381);
+            this.pictureBox9C.Location = new System.Drawing.Point(81, 310);
+            this.pictureBox9C.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox9C.Name = "pictureBox9C";
-            this.pictureBox9C.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox9C.Size = new System.Drawing.Size(30, 33);
             this.pictureBox9C.TabIndex = 46;
             this.pictureBox9C.TabStop = false;
             this.pictureBox9C.Click += new System.EventHandler(this.PictureBox_Click);
@@ -842,9 +903,10 @@ namespace UI
             // 
             this.pictureBox9H.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox9H.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox9H.Location = new System.Drawing.Point(338, 381);
+            this.pictureBox9H.Location = new System.Drawing.Point(254, 310);
+            this.pictureBox9H.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox9H.Name = "pictureBox9H";
-            this.pictureBox9H.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox9H.Size = new System.Drawing.Size(30, 33);
             this.pictureBox9H.TabIndex = 45;
             this.pictureBox9H.TabStop = false;
             this.pictureBox9H.Click += new System.EventHandler(this.PictureBox_Click);
@@ -853,9 +915,10 @@ namespace UI
             // 
             this.pictureBox9I.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox9I.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox9I.Location = new System.Drawing.Point(384, 381);
+            this.pictureBox9I.Location = new System.Drawing.Point(288, 310);
+            this.pictureBox9I.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox9I.Name = "pictureBox9I";
-            this.pictureBox9I.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox9I.Size = new System.Drawing.Size(30, 33);
             this.pictureBox9I.TabIndex = 44;
             this.pictureBox9I.TabStop = false;
             this.pictureBox9I.Click += new System.EventHandler(this.PictureBox_Click);
@@ -864,9 +927,10 @@ namespace UI
             // 
             this.pictureBox9J.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox9J.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox9J.Location = new System.Drawing.Point(430, 381);
+            this.pictureBox9J.Location = new System.Drawing.Point(322, 310);
+            this.pictureBox9J.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox9J.Name = "pictureBox9J";
-            this.pictureBox9J.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox9J.Size = new System.Drawing.Size(30, 33);
             this.pictureBox9J.TabIndex = 43;
             this.pictureBox9J.TabStop = false;
             this.pictureBox9J.Click += new System.EventHandler(this.PictureBox_Click);
@@ -875,9 +939,10 @@ namespace UI
             // 
             this.pictureBox9B.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox9B.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox9B.Location = new System.Drawing.Point(62, 381);
+            this.pictureBox9B.Location = new System.Drawing.Point(46, 310);
+            this.pictureBox9B.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox9B.Name = "pictureBox9B";
-            this.pictureBox9B.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox9B.Size = new System.Drawing.Size(30, 33);
             this.pictureBox9B.TabIndex = 42;
             this.pictureBox9B.TabStop = false;
             this.pictureBox9B.Click += new System.EventHandler(this.PictureBox_Click);
@@ -886,9 +951,10 @@ namespace UI
             // 
             this.pictureBox9A.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox9A.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox9A.Location = new System.Drawing.Point(16, 381);
+            this.pictureBox9A.Location = new System.Drawing.Point(12, 310);
+            this.pictureBox9A.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox9A.Name = "pictureBox9A";
-            this.pictureBox9A.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox9A.Size = new System.Drawing.Size(30, 33);
             this.pictureBox9A.TabIndex = 41;
             this.pictureBox9A.TabStop = false;
             this.pictureBox9A.Click += new System.EventHandler(this.PictureBox_Click);
@@ -897,9 +963,10 @@ namespace UI
             // 
             this.pictureBox8D.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox8D.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox8D.Location = new System.Drawing.Point(154, 335);
+            this.pictureBox8D.Location = new System.Drawing.Point(116, 272);
+            this.pictureBox8D.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox8D.Name = "pictureBox8D";
-            this.pictureBox8D.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox8D.Size = new System.Drawing.Size(30, 33);
             this.pictureBox8D.TabIndex = 40;
             this.pictureBox8D.TabStop = false;
             this.pictureBox8D.Click += new System.EventHandler(this.PictureBox_Click);
@@ -908,9 +975,10 @@ namespace UI
             // 
             this.pictureBox8E.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox8E.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox8E.Location = new System.Drawing.Point(200, 335);
+            this.pictureBox8E.Location = new System.Drawing.Point(150, 272);
+            this.pictureBox8E.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox8E.Name = "pictureBox8E";
-            this.pictureBox8E.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox8E.Size = new System.Drawing.Size(30, 33);
             this.pictureBox8E.TabIndex = 39;
             this.pictureBox8E.TabStop = false;
             this.pictureBox8E.Click += new System.EventHandler(this.PictureBox_Click);
@@ -919,9 +987,10 @@ namespace UI
             // 
             this.pictureBox8F.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox8F.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox8F.Location = new System.Drawing.Point(246, 335);
+            this.pictureBox8F.Location = new System.Drawing.Point(184, 272);
+            this.pictureBox8F.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox8F.Name = "pictureBox8F";
-            this.pictureBox8F.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox8F.Size = new System.Drawing.Size(30, 33);
             this.pictureBox8F.TabIndex = 38;
             this.pictureBox8F.TabStop = false;
             this.pictureBox8F.Click += new System.EventHandler(this.PictureBox_Click);
@@ -930,9 +999,10 @@ namespace UI
             // 
             this.pictureBox8G.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox8G.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox8G.Location = new System.Drawing.Point(292, 335);
+            this.pictureBox8G.Location = new System.Drawing.Point(219, 272);
+            this.pictureBox8G.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox8G.Name = "pictureBox8G";
-            this.pictureBox8G.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox8G.Size = new System.Drawing.Size(30, 33);
             this.pictureBox8G.TabIndex = 37;
             this.pictureBox8G.TabStop = false;
             this.pictureBox8G.Click += new System.EventHandler(this.PictureBox_Click);
@@ -941,9 +1011,10 @@ namespace UI
             // 
             this.pictureBox8C.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox8C.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox8C.Location = new System.Drawing.Point(108, 335);
+            this.pictureBox8C.Location = new System.Drawing.Point(81, 272);
+            this.pictureBox8C.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox8C.Name = "pictureBox8C";
-            this.pictureBox8C.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox8C.Size = new System.Drawing.Size(30, 33);
             this.pictureBox8C.TabIndex = 36;
             this.pictureBox8C.TabStop = false;
             this.pictureBox8C.Click += new System.EventHandler(this.PictureBox_Click);
@@ -952,9 +1023,10 @@ namespace UI
             // 
             this.pictureBox8H.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox8H.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox8H.Location = new System.Drawing.Point(338, 335);
+            this.pictureBox8H.Location = new System.Drawing.Point(254, 272);
+            this.pictureBox8H.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox8H.Name = "pictureBox8H";
-            this.pictureBox8H.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox8H.Size = new System.Drawing.Size(30, 33);
             this.pictureBox8H.TabIndex = 35;
             this.pictureBox8H.TabStop = false;
             this.pictureBox8H.Click += new System.EventHandler(this.PictureBox_Click);
@@ -963,9 +1035,10 @@ namespace UI
             // 
             this.pictureBox8I.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox8I.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox8I.Location = new System.Drawing.Point(384, 335);
+            this.pictureBox8I.Location = new System.Drawing.Point(288, 272);
+            this.pictureBox8I.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox8I.Name = "pictureBox8I";
-            this.pictureBox8I.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox8I.Size = new System.Drawing.Size(30, 33);
             this.pictureBox8I.TabIndex = 34;
             this.pictureBox8I.TabStop = false;
             this.pictureBox8I.Click += new System.EventHandler(this.PictureBox_Click);
@@ -974,9 +1047,10 @@ namespace UI
             // 
             this.pictureBox8J.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox8J.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox8J.Location = new System.Drawing.Point(430, 335);
+            this.pictureBox8J.Location = new System.Drawing.Point(322, 272);
+            this.pictureBox8J.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox8J.Name = "pictureBox8J";
-            this.pictureBox8J.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox8J.Size = new System.Drawing.Size(30, 33);
             this.pictureBox8J.TabIndex = 33;
             this.pictureBox8J.TabStop = false;
             this.pictureBox8J.Click += new System.EventHandler(this.PictureBox_Click);
@@ -985,9 +1059,10 @@ namespace UI
             // 
             this.pictureBox8B.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox8B.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox8B.Location = new System.Drawing.Point(62, 335);
+            this.pictureBox8B.Location = new System.Drawing.Point(46, 272);
+            this.pictureBox8B.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox8B.Name = "pictureBox8B";
-            this.pictureBox8B.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox8B.Size = new System.Drawing.Size(30, 33);
             this.pictureBox8B.TabIndex = 32;
             this.pictureBox8B.TabStop = false;
             this.pictureBox8B.Click += new System.EventHandler(this.PictureBox_Click);
@@ -996,9 +1071,10 @@ namespace UI
             // 
             this.pictureBox8A.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox8A.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox8A.Location = new System.Drawing.Point(16, 335);
+            this.pictureBox8A.Location = new System.Drawing.Point(12, 272);
+            this.pictureBox8A.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox8A.Name = "pictureBox8A";
-            this.pictureBox8A.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox8A.Size = new System.Drawing.Size(30, 33);
             this.pictureBox8A.TabIndex = 31;
             this.pictureBox8A.TabStop = false;
             this.pictureBox8A.Click += new System.EventHandler(this.PictureBox_Click);
@@ -1007,9 +1083,10 @@ namespace UI
             // 
             this.pictureBox7D.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox7D.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox7D.Location = new System.Drawing.Point(154, 289);
+            this.pictureBox7D.Location = new System.Drawing.Point(116, 235);
+            this.pictureBox7D.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox7D.Name = "pictureBox7D";
-            this.pictureBox7D.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox7D.Size = new System.Drawing.Size(30, 33);
             this.pictureBox7D.TabIndex = 30;
             this.pictureBox7D.TabStop = false;
             this.pictureBox7D.Click += new System.EventHandler(this.PictureBox_Click);
@@ -1018,20 +1095,23 @@ namespace UI
             // 
             this.pictureBox7E.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox7E.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox7E.Location = new System.Drawing.Point(200, 289);
+            this.pictureBox7E.Location = new System.Drawing.Point(150, 235);
+            this.pictureBox7E.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox7E.Name = "pictureBox7E";
-            this.pictureBox7E.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox7E.Size = new System.Drawing.Size(30, 33);
             this.pictureBox7E.TabIndex = 29;
             this.pictureBox7E.TabStop = false;
             this.pictureBox7E.Click += new System.EventHandler(this.PictureBox_Click);
             // 
             // pictureBox7F
             // 
+            this.pictureBox7F.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox7F.BackgroundImage")));
             this.pictureBox7F.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox7F.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox7F.Location = new System.Drawing.Point(246, 289);
+            this.pictureBox7F.Location = new System.Drawing.Point(184, 235);
+            this.pictureBox7F.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox7F.Name = "pictureBox7F";
-            this.pictureBox7F.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox7F.Size = new System.Drawing.Size(30, 33);
             this.pictureBox7F.TabIndex = 28;
             this.pictureBox7F.TabStop = false;
             this.pictureBox7F.Click += new System.EventHandler(this.PictureBox_Click);
@@ -1040,9 +1120,10 @@ namespace UI
             // 
             this.pictureBox7G.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox7G.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox7G.Location = new System.Drawing.Point(292, 289);
+            this.pictureBox7G.Location = new System.Drawing.Point(219, 235);
+            this.pictureBox7G.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox7G.Name = "pictureBox7G";
-            this.pictureBox7G.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox7G.Size = new System.Drawing.Size(30, 33);
             this.pictureBox7G.TabIndex = 27;
             this.pictureBox7G.TabStop = false;
             this.pictureBox7G.Click += new System.EventHandler(this.PictureBox_Click);
@@ -1051,9 +1132,10 @@ namespace UI
             // 
             this.pictureBox7C.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox7C.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox7C.Location = new System.Drawing.Point(108, 289);
+            this.pictureBox7C.Location = new System.Drawing.Point(81, 235);
+            this.pictureBox7C.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox7C.Name = "pictureBox7C";
-            this.pictureBox7C.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox7C.Size = new System.Drawing.Size(30, 33);
             this.pictureBox7C.TabIndex = 26;
             this.pictureBox7C.TabStop = false;
             this.pictureBox7C.Click += new System.EventHandler(this.PictureBox_Click);
@@ -1062,9 +1144,10 @@ namespace UI
             // 
             this.pictureBox7H.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox7H.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox7H.Location = new System.Drawing.Point(338, 289);
+            this.pictureBox7H.Location = new System.Drawing.Point(254, 235);
+            this.pictureBox7H.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox7H.Name = "pictureBox7H";
-            this.pictureBox7H.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox7H.Size = new System.Drawing.Size(30, 33);
             this.pictureBox7H.TabIndex = 25;
             this.pictureBox7H.TabStop = false;
             this.pictureBox7H.Click += new System.EventHandler(this.PictureBox_Click);
@@ -1073,9 +1156,10 @@ namespace UI
             // 
             this.pictureBox7I.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox7I.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox7I.Location = new System.Drawing.Point(384, 289);
+            this.pictureBox7I.Location = new System.Drawing.Point(288, 235);
+            this.pictureBox7I.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox7I.Name = "pictureBox7I";
-            this.pictureBox7I.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox7I.Size = new System.Drawing.Size(30, 33);
             this.pictureBox7I.TabIndex = 24;
             this.pictureBox7I.TabStop = false;
             this.pictureBox7I.Click += new System.EventHandler(this.PictureBox_Click);
@@ -1084,9 +1168,10 @@ namespace UI
             // 
             this.pictureBox7J.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox7J.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox7J.Location = new System.Drawing.Point(430, 289);
+            this.pictureBox7J.Location = new System.Drawing.Point(322, 235);
+            this.pictureBox7J.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox7J.Name = "pictureBox7J";
-            this.pictureBox7J.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox7J.Size = new System.Drawing.Size(30, 33);
             this.pictureBox7J.TabIndex = 23;
             this.pictureBox7J.TabStop = false;
             this.pictureBox7J.Click += new System.EventHandler(this.PictureBox_Click);
@@ -1095,9 +1180,10 @@ namespace UI
             // 
             this.pictureBox7B.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox7B.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox7B.Location = new System.Drawing.Point(62, 289);
+            this.pictureBox7B.Location = new System.Drawing.Point(46, 235);
+            this.pictureBox7B.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox7B.Name = "pictureBox7B";
-            this.pictureBox7B.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox7B.Size = new System.Drawing.Size(30, 33);
             this.pictureBox7B.TabIndex = 22;
             this.pictureBox7B.TabStop = false;
             this.pictureBox7B.Click += new System.EventHandler(this.PictureBox_Click);
@@ -1106,9 +1192,10 @@ namespace UI
             // 
             this.pictureBox7A.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox7A.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox7A.Location = new System.Drawing.Point(16, 289);
+            this.pictureBox7A.Location = new System.Drawing.Point(12, 235);
+            this.pictureBox7A.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox7A.Name = "pictureBox7A";
-            this.pictureBox7A.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox7A.Size = new System.Drawing.Size(30, 33);
             this.pictureBox7A.TabIndex = 21;
             this.pictureBox7A.TabStop = false;
             this.pictureBox7A.Click += new System.EventHandler(this.PictureBox_Click);
@@ -1117,9 +1204,10 @@ namespace UI
             // 
             this.pictureBox6D.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox6D.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox6D.Location = new System.Drawing.Point(154, 243);
+            this.pictureBox6D.Location = new System.Drawing.Point(116, 197);
+            this.pictureBox6D.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox6D.Name = "pictureBox6D";
-            this.pictureBox6D.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox6D.Size = new System.Drawing.Size(30, 33);
             this.pictureBox6D.TabIndex = 20;
             this.pictureBox6D.TabStop = false;
             this.pictureBox6D.Click += new System.EventHandler(this.PictureBox_Click);
@@ -1128,9 +1216,11 @@ namespace UI
             // 
             this.pictureBox6E.BackgroundImage = global::UI.Properties.Resources.CoinYellow1;
             this.pictureBox6E.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox6E.Location = new System.Drawing.Point(200, 243);
+            this.pictureBox6E.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox6E.Location = new System.Drawing.Point(150, 197);
+            this.pictureBox6E.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox6E.Name = "pictureBox6E";
-            this.pictureBox6E.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox6E.Size = new System.Drawing.Size(30, 32);
             this.pictureBox6E.TabIndex = 19;
             this.pictureBox6E.TabStop = false;
             this.pictureBox6E.Click += new System.EventHandler(this.PictureBox_Click);
@@ -1139,20 +1229,24 @@ namespace UI
             // 
             this.pictureBox6F.BackgroundImage = global::UI.Properties.Resources.CoinRed1;
             this.pictureBox6F.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox6F.Location = new System.Drawing.Point(246, 243);
+            this.pictureBox6F.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox6F.Location = new System.Drawing.Point(184, 197);
+            this.pictureBox6F.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox6F.Name = "pictureBox6F";
-            this.pictureBox6F.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox6F.Size = new System.Drawing.Size(30, 32);
             this.pictureBox6F.TabIndex = 18;
             this.pictureBox6F.TabStop = false;
             this.pictureBox6F.Click += new System.EventHandler(this.PictureBox_Click);
             // 
             // pictureBox6G
             // 
+            this.pictureBox6G.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6G.BackgroundImage")));
             this.pictureBox6G.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox6G.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox6G.Location = new System.Drawing.Point(292, 243);
+            this.pictureBox6G.Location = new System.Drawing.Point(219, 197);
+            this.pictureBox6G.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox6G.Name = "pictureBox6G";
-            this.pictureBox6G.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox6G.Size = new System.Drawing.Size(30, 33);
             this.pictureBox6G.TabIndex = 17;
             this.pictureBox6G.TabStop = false;
             this.pictureBox6G.Click += new System.EventHandler(this.PictureBox_Click);
@@ -1161,9 +1255,10 @@ namespace UI
             // 
             this.pictureBox6C.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox6C.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox6C.Location = new System.Drawing.Point(108, 243);
+            this.pictureBox6C.Location = new System.Drawing.Point(81, 197);
+            this.pictureBox6C.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox6C.Name = "pictureBox6C";
-            this.pictureBox6C.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox6C.Size = new System.Drawing.Size(30, 33);
             this.pictureBox6C.TabIndex = 16;
             this.pictureBox6C.TabStop = false;
             this.pictureBox6C.Click += new System.EventHandler(this.PictureBox_Click);
@@ -1172,9 +1267,10 @@ namespace UI
             // 
             this.pictureBox6H.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox6H.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox6H.Location = new System.Drawing.Point(338, 243);
+            this.pictureBox6H.Location = new System.Drawing.Point(254, 197);
+            this.pictureBox6H.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox6H.Name = "pictureBox6H";
-            this.pictureBox6H.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox6H.Size = new System.Drawing.Size(30, 33);
             this.pictureBox6H.TabIndex = 15;
             this.pictureBox6H.TabStop = false;
             this.pictureBox6H.Click += new System.EventHandler(this.PictureBox_Click);
@@ -1183,9 +1279,10 @@ namespace UI
             // 
             this.pictureBox6I.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox6I.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox6I.Location = new System.Drawing.Point(384, 243);
+            this.pictureBox6I.Location = new System.Drawing.Point(288, 197);
+            this.pictureBox6I.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox6I.Name = "pictureBox6I";
-            this.pictureBox6I.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox6I.Size = new System.Drawing.Size(30, 33);
             this.pictureBox6I.TabIndex = 14;
             this.pictureBox6I.TabStop = false;
             this.pictureBox6I.Click += new System.EventHandler(this.PictureBox_Click);
@@ -1194,9 +1291,10 @@ namespace UI
             // 
             this.pictureBox6J.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox6J.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox6J.Location = new System.Drawing.Point(430, 243);
+            this.pictureBox6J.Location = new System.Drawing.Point(322, 197);
+            this.pictureBox6J.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox6J.Name = "pictureBox6J";
-            this.pictureBox6J.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox6J.Size = new System.Drawing.Size(30, 33);
             this.pictureBox6J.TabIndex = 13;
             this.pictureBox6J.TabStop = false;
             this.pictureBox6J.Click += new System.EventHandler(this.PictureBox_Click);
@@ -1205,9 +1303,10 @@ namespace UI
             // 
             this.pictureBox6B.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox6B.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox6B.Location = new System.Drawing.Point(62, 243);
+            this.pictureBox6B.Location = new System.Drawing.Point(46, 197);
+            this.pictureBox6B.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox6B.Name = "pictureBox6B";
-            this.pictureBox6B.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox6B.Size = new System.Drawing.Size(30, 33);
             this.pictureBox6B.TabIndex = 12;
             this.pictureBox6B.TabStop = false;
             this.pictureBox6B.Click += new System.EventHandler(this.PictureBox_Click);
@@ -1216,9 +1315,10 @@ namespace UI
             // 
             this.pictureBox6A.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox6A.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox6A.Location = new System.Drawing.Point(16, 243);
+            this.pictureBox6A.Location = new System.Drawing.Point(12, 197);
+            this.pictureBox6A.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox6A.Name = "pictureBox6A";
-            this.pictureBox6A.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox6A.Size = new System.Drawing.Size(30, 33);
             this.pictureBox6A.TabIndex = 11;
             this.pictureBox6A.TabStop = false;
             this.pictureBox6A.Click += new System.EventHandler(this.PictureBox_Click);
@@ -1227,9 +1327,10 @@ namespace UI
             // 
             this.pictureBox1D.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1D.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1D.Location = new System.Drawing.Point(154, 13);
+            this.pictureBox1D.Location = new System.Drawing.Point(116, 11);
+            this.pictureBox1D.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1D.Name = "pictureBox1D";
-            this.pictureBox1D.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox1D.Size = new System.Drawing.Size(30, 33);
             this.pictureBox1D.TabIndex = 10;
             this.pictureBox1D.TabStop = false;
             this.pictureBox1D.Click += new System.EventHandler(this.PictureBox_Click);
@@ -1238,9 +1339,10 @@ namespace UI
             // 
             this.pictureBox1E.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1E.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1E.Location = new System.Drawing.Point(200, 13);
+            this.pictureBox1E.Location = new System.Drawing.Point(150, 11);
+            this.pictureBox1E.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1E.Name = "pictureBox1E";
-            this.pictureBox1E.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox1E.Size = new System.Drawing.Size(30, 33);
             this.pictureBox1E.TabIndex = 9;
             this.pictureBox1E.TabStop = false;
             this.pictureBox1E.Click += new System.EventHandler(this.PictureBox_Click);
@@ -1249,9 +1351,10 @@ namespace UI
             // 
             this.pictureBox1F.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1F.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1F.Location = new System.Drawing.Point(246, 13);
+            this.pictureBox1F.Location = new System.Drawing.Point(184, 11);
+            this.pictureBox1F.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1F.Name = "pictureBox1F";
-            this.pictureBox1F.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox1F.Size = new System.Drawing.Size(30, 33);
             this.pictureBox1F.TabIndex = 8;
             this.pictureBox1F.TabStop = false;
             this.pictureBox1F.Click += new System.EventHandler(this.PictureBox_Click);
@@ -1260,9 +1363,10 @@ namespace UI
             // 
             this.pictureBox1G.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1G.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1G.Location = new System.Drawing.Point(292, 13);
+            this.pictureBox1G.Location = new System.Drawing.Point(219, 11);
+            this.pictureBox1G.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1G.Name = "pictureBox1G";
-            this.pictureBox1G.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox1G.Size = new System.Drawing.Size(30, 33);
             this.pictureBox1G.TabIndex = 7;
             this.pictureBox1G.TabStop = false;
             this.pictureBox1G.Click += new System.EventHandler(this.PictureBox_Click);
@@ -1271,9 +1375,10 @@ namespace UI
             // 
             this.pictureBox1C.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1C.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1C.Location = new System.Drawing.Point(108, 13);
+            this.pictureBox1C.Location = new System.Drawing.Point(81, 11);
+            this.pictureBox1C.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1C.Name = "pictureBox1C";
-            this.pictureBox1C.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox1C.Size = new System.Drawing.Size(30, 33);
             this.pictureBox1C.TabIndex = 6;
             this.pictureBox1C.TabStop = false;
             this.pictureBox1C.Click += new System.EventHandler(this.PictureBox_Click);
@@ -1282,9 +1387,10 @@ namespace UI
             // 
             this.pictureBox1H.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1H.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1H.Location = new System.Drawing.Point(338, 13);
+            this.pictureBox1H.Location = new System.Drawing.Point(254, 11);
+            this.pictureBox1H.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1H.Name = "pictureBox1H";
-            this.pictureBox1H.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox1H.Size = new System.Drawing.Size(30, 33);
             this.pictureBox1H.TabIndex = 5;
             this.pictureBox1H.TabStop = false;
             this.pictureBox1H.Click += new System.EventHandler(this.PictureBox_Click);
@@ -1293,9 +1399,10 @@ namespace UI
             // 
             this.pictureBox1I.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1I.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1I.Location = new System.Drawing.Point(384, 13);
+            this.pictureBox1I.Location = new System.Drawing.Point(288, 11);
+            this.pictureBox1I.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1I.Name = "pictureBox1I";
-            this.pictureBox1I.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox1I.Size = new System.Drawing.Size(30, 33);
             this.pictureBox1I.TabIndex = 4;
             this.pictureBox1I.TabStop = false;
             this.pictureBox1I.Click += new System.EventHandler(this.PictureBox_Click);
@@ -1304,9 +1411,10 @@ namespace UI
             // 
             this.pictureBox1J.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1J.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1J.Location = new System.Drawing.Point(430, 13);
+            this.pictureBox1J.Location = new System.Drawing.Point(322, 11);
+            this.pictureBox1J.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1J.Name = "pictureBox1J";
-            this.pictureBox1J.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox1J.Size = new System.Drawing.Size(30, 33);
             this.pictureBox1J.TabIndex = 3;
             this.pictureBox1J.TabStop = false;
             this.pictureBox1J.Click += new System.EventHandler(this.PictureBox_Click);
@@ -1315,9 +1423,10 @@ namespace UI
             // 
             this.pictureBox1B.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1B.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1B.Location = new System.Drawing.Point(62, 13);
+            this.pictureBox1B.Location = new System.Drawing.Point(46, 11);
+            this.pictureBox1B.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1B.Name = "pictureBox1B";
-            this.pictureBox1B.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox1B.Size = new System.Drawing.Size(30, 33);
             this.pictureBox1B.TabIndex = 2;
             this.pictureBox1B.TabStop = false;
             this.pictureBox1B.Click += new System.EventHandler(this.PictureBox_Click);
@@ -1326,18 +1435,31 @@ namespace UI
             // 
             this.pictureBox1A.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1A.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1A.Location = new System.Drawing.Point(16, 13);
+            this.pictureBox1A.Location = new System.Drawing.Point(12, 11);
+            this.pictureBox1A.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1A.Name = "pictureBox1A";
-            this.pictureBox1A.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox1A.Size = new System.Drawing.Size(30, 33);
             this.pictureBox1A.TabIndex = 0;
             this.pictureBox1A.TabStop = false;
             this.pictureBox1A.Click += new System.EventHandler(this.PictureBox_Click);
             // 
+            // ButtonGameOver
+            // 
+            this.ButtonGameOver.Enabled = false;
+            this.ButtonGameOver.Location = new System.Drawing.Point(-3, 381);
+            this.ButtonGameOver.Name = "ButtonGameOver";
+            this.ButtonGameOver.Size = new System.Drawing.Size(10, 10);
+            this.ButtonGameOver.TabIndex = 101;
+            this.ButtonGameOver.Text = "button1";
+            this.ButtonGameOver.UseVisualStyleBackColor = true;
+            this.ButtonGameOver.Visible = false;
+            // 
             // BoardForm10x10
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(484, 477);
+            this.ClientSize = new System.Drawing.Size(363, 388);
+            this.Controls.Add(this.ButtonGameOver);
             this.Controls.Add(this.pictureBox10D);
             this.Controls.Add(this.pictureBox10E);
             this.Controls.Add(this.pictureBox10F);
@@ -1438,8 +1560,10 @@ namespace UI
             this.Controls.Add(this.pictureBox1J);
             this.Controls.Add(this.pictureBox1B);
             this.Controls.Add(this.pictureBox1A);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "BoardForm10x10";
-            this.Text = "BoardForm10x10";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Othello - Black\'s Turn";
             this.Load += new System.EventHandler(this.BoardForm10x10_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10D)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10E)).EndInit();
@@ -1547,7 +1671,7 @@ namespace UI
 
         private void BoardForm10x10_Load(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+
         }
 
         #endregion
@@ -1652,5 +1776,6 @@ namespace UI
         private System.Windows.Forms.PictureBox pictureBox10J;
         private System.Windows.Forms.PictureBox pictureBox10B;
         private System.Windows.Forms.PictureBox pictureBox10A;
+        private System.Windows.Forms.Button ButtonGameOver;
     }
 }

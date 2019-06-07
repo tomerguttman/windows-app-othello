@@ -39,9 +39,10 @@
             // button1
             // 
             this.button1.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.button1.Location = new System.Drawing.Point(222, 170);
+            this.button1.Location = new System.Drawing.Point(166, 138);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(120, 42);
+            this.button1.Size = new System.Drawing.Size(90, 34);
             this.button1.TabIndex = 0;
             this.button1.Text = "Yes";
             this.button1.UseVisualStyleBackColor = true;
@@ -49,9 +50,10 @@
             // button2
             // 
             this.button2.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.button2.Location = new System.Drawing.Point(348, 170);
+            this.button2.Location = new System.Drawing.Point(261, 138);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(120, 42);
+            this.button2.Size = new System.Drawing.Size(90, 34);
             this.button2.TabIndex = 1;
             this.button2.Text = "No";
             this.button2.UseVisualStyleBackColor = true;
@@ -60,19 +62,21 @@
             // 
             this.LabelGameRes.AutoSize = true;
             this.LabelGameRes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelGameRes.Location = new System.Drawing.Point(142, 57);
+            this.LabelGameRes.Location = new System.Drawing.Point(106, 46);
+            this.LabelGameRes.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LabelGameRes.Name = "LabelGameRes";
-            this.LabelGameRes.Size = new System.Drawing.Size(20, 24);
+            this.LabelGameRes.Size = new System.Drawing.Size(111, 18);
             this.LabelGameRes.TabIndex = 3;
-            this.LabelGameRes.Text = "a";
+            this.LabelGameRes.Text = "LabelGameRes";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(142, 81);
+            this.label2.Location = new System.Drawing.Point(106, 66);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(268, 24);
+            this.label2.Size = new System.Drawing.Size(209, 18);
             this.label2.TabIndex = 4;
             this.label2.Text = "Would you like another round?";
             // 
@@ -82,23 +86,26 @@
             this.pictureBox1.BackgroundImage = global::UI.Properties.Resources.thumb_Information;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictureBox1.Location = new System.Drawing.Point(23, 39);
+            this.pictureBox1.Location = new System.Drawing.Point(17, 32);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 96);
+            this.pictureBox1.Size = new System.Drawing.Size(75, 78);
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
             // EndOthelloForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(480, 226);
+            this.ClientSize = new System.Drawing.Size(360, 184);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.LabelGameRes);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "EndOthelloForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EndOthelloForm";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
