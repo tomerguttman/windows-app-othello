@@ -1,7 +1,7 @@
 # Othello Game - Visual UI
 Othello game implemented with C#.
 
-#Key learnings
+# Key learnings
 Microsoft Visual Studio .NET dev tools
 Object oriented coding
 Lists
