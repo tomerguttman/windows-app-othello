@@ -2,19 +2,16 @@
 Othello game implemented with C#.
 
 # Key learnings
-Microsoft Visual Studio .NET dev tools
+Microsoft visual studio .NET dev tools
 Object oriented coding
-Lists
-Forms
-Using outer Dll
-Access modifiers
-Constructors
+Data structures
+Windows forms
+Outer dll's
 Properties
 Indexers
-Delegation
+Delegations
 Interfaces
-Controls
-Resources
 EventHandlers
 C# syntax
 StyleCop
+
