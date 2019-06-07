@@ -63,6 +63,16 @@ namespace UI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _81IWeBMgK9L__SX466_ {
+            get {
+                object obj = ResourceManager.GetObject("81IWeBMgK9L._SX466_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap CoinRed1 {
             get {
                 object obj = ResourceManager.GetObject("CoinRed1", resourceCulture);

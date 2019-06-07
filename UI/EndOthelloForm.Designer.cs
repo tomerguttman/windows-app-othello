@@ -30,7 +30,7 @@
         {
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.LabelGameRes = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -38,6 +38,7 @@
             // 
             // button1
             // 
+            this.button1.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.button1.Location = new System.Drawing.Point(222, 170);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(120, 42);
@@ -47,6 +48,7 @@
             // 
             // button2
             // 
+            this.button2.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.button2.Location = new System.Drawing.Point(348, 170);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(120, 42);
@@ -54,15 +56,15 @@
             this.button2.Text = "No";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // LabelGameRes
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(142, 57);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(230, 24);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "The winner is + final score";
+            this.LabelGameRes.AutoSize = true;
+            this.LabelGameRes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelGameRes.Location = new System.Drawing.Point(142, 57);
+            this.LabelGameRes.Name = "LabelGameRes";
+            this.LabelGameRes.Size = new System.Drawing.Size(20, 24);
+            this.LabelGameRes.TabIndex = 3;
+            this.LabelGameRes.Text = "a";
             // 
             // label2
             // 
@@ -80,7 +82,7 @@
             this.pictureBox1.BackgroundImage = global::UI.Properties.Resources.thumb_Information;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictureBox1.Location = new System.Drawing.Point(36, 38);
+            this.pictureBox1.Location = new System.Drawing.Point(23, 39);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(100, 96);
             this.pictureBox1.TabIndex = 2;
@@ -92,7 +94,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(480, 226);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.LabelGameRes);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -109,7 +111,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label LabelGameRes;
         private System.Windows.Forms.Label label2;
     }
 }

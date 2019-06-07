@@ -3,7 +3,6 @@ namespace UI
 {
     partial class FormBoard6x6 
     {
-        PictureBox[,] m_DiscsArray = null;
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -67,6 +66,7 @@ namespace UI
             this.pictureBox1A = new System.Windows.Forms.PictureBox();
             this.pictureBox1B = new System.Windows.Forms.PictureBox();
             this.pictureBox1C = new System.Windows.Forms.PictureBox();
+            this.ButtonGameOver = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6E)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6F)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6D)).BeginInit();
@@ -429,11 +429,21 @@ namespace UI
             this.pictureBox1C.TabStop = false;
             this.pictureBox1C.Click += new System.EventHandler(this.pictureBox_Click);
             // 
+            // ButtonGameOver
+            // 
+            this.ButtonGameOver.DialogResult = System.Windows.Forms.DialogResult.Abort;
+            resources.ApplyResources(this.ButtonGameOver, "ButtonGameOver");
+            this.ButtonGameOver.Name = "ButtonGameOver";
+            this.ButtonGameOver.UseVisualStyleBackColor = true;
+            this.ButtonGameOver.Click += new System.EventHandler(this.ButtonGameOver_Click);
+            // 
             // FormBoard6x6
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.BackgroundImage = global::UI.Properties.Resources._81IWeBMgK9L__SX466_;
+            this.Controls.Add(this.ButtonGameOver);
             this.Controls.Add(this.pictureBox6E);
             this.Controls.Add(this.pictureBox6F);
             this.Controls.Add(this.pictureBox6D);
@@ -553,5 +563,6 @@ namespace UI
         private PictureBox pictureBox2D;
         private PictureBox pictureBox6F;
         private PictureBox pictureBox6E;
+        private Button ButtonGameOver;
     }
 }

@@ -41,7 +41,7 @@ namespace GameLogic
             UpLeft,
         }
 
-        public static void OthelloTurnManager(GameData.OthelloBoard io_OthelloBoard, string i_PointName, GameData.OthelloPlayer i_Player, ref int io_ConsecutiveNumberOfTurnsWithoutValidMoves)
+        public static void OthelloTurnManager(GameData.OthelloBoard io_OthelloBoard, string i_PointName, GameData.OthelloPlayer i_Player)// ref int io_ConsecutiveNumberOfTurnsWithoutValidMoves)
         {
             GameData.OthelloBoard tempOthelloBoard = new GameData.OthelloBoard(io_OthelloBoard);
             GameData.OthelloBoard.Point playersPointChoice = GameData.OthelloBoard.Point.ToPoint(i_PointName);
@@ -54,20 +54,6 @@ namespace GameLogic
                 io_OthelloBoard.M_OthelloBoard[playersPointChoice.M_Longtitude - 1, (int)playersPointChoice.M_Latitude - 'A'].M_CellValue = i_Player.Color;
                 io_OthelloBoard.M_OthelloBoard[playersPointChoice.M_Longtitude - 1, (int)playersPointChoice.M_Latitude - 'A'].M_IsAvailableCell = false;
                 UpdateBoardAfterDiscPlacement(io_OthelloBoard, playersPointChoice);
-
-                if (i_Player.PlayerNumber == 3)
-                {
-                    System.Threading.Thread.Sleep(2000);
-                }
-
-                //UI.Console.PrintBoard(io_OthelloBoard);
-                io_ConsecutiveNumberOfTurnsWithoutValidMoves = 0;
-            }
-            else
-            {
-                //string message = string.Format("{0} has no optional moves!", i_Player.M_PlayerName);
-                //System.Console.WriteLine(message);
-                io_ConsecutiveNumberOfTurnsWithoutValidMoves += 1;
             }
         }
 

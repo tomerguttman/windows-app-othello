@@ -9,51 +9,6 @@ namespace GameData
         private int m_BoardSize;
         private Point[,] m_OthelloBoard;
 
-        ////public static void PrintBoard(OthelloBoard i_OthelloBoard)
-        ////{
-        ////    for (int i = 0; i < i_OthelloBoard.m_BoardSize; i++)
-        ////    {
-        ////        if (i == 0)
-        ////        {
-        ////            if (i_OthelloBoard.m_BoardSize == 8)
-        ////            {
-        ////                Console.WriteLine("    A   B   C   D   E   F   G   H");
-        ////                Console.WriteLine("  =================================");
-        ////            }
-        ////            else
-        ////            {
-        ////                Console.WriteLine("    A   B   C   D   E   F");
-        ////                Console.WriteLine("  =========================");
-        ////            }
-        ////        }
-
-        ////        for (char c = 'A'; c < (char)('A' + i_OthelloBoard.m_BoardSize); c++)
-        ////        {
-        ////            if (c == 'A')
-        ////            {
-        ////                string outputMessage = string.Format("{0} | {1} |", i + 1, i_OthelloBoard.m_OthelloBoard[i, c - 'A'].M_CellValue);
-        ////                Console.Write(outputMessage);
-        ////            }
-        ////            else
-        ////            {
-        ////                string outputMessage = string.Format(" {0} |", i_OthelloBoard.m_OthelloBoard[i, c - 'A'].M_CellValue);
-        ////                Console.Write(outputMessage);
-        ////            }
-        ////        }
-
-        ////        if (i_OthelloBoard.m_BoardSize == 8)
-        ////        {
-        ////            Console.WriteLine("\n  =================================");
-        ////        }
-        ////        else
-        ////        {
-        ////            Console.WriteLine("\n  =========================");
-        ////        }
-        ////    }
-
-        ////    Console.WriteLine();
-        ////}
-
         public static bool IsValidDiscPlacement(OthelloBoard i_OthelloBoard, int i_Longtitude, char i_Latitude, OthelloPlayer i_Player)
         {
             return i_OthelloBoard.M_OthelloBoard[i_Longtitude - 1, i_Latitude - 'A'].M_IsAvailableCell == true;
@@ -144,6 +99,30 @@ namespace GameData
                 m_OthelloBoard[2, 3].M_IsAvailableCell = false;
                 m_OthelloBoard[3, 2].M_IsAvailableCell = false;
                 m_OthelloBoard[3, 3].M_IsAvailableCell = false;
+            }
+            else if (m_BoardSize == 10)
+            {
+                m_OthelloBoard[4, 4].M_CellValue = Point.k_White;
+                m_OthelloBoard[4, 5].M_CellValue = Point.k_Black;
+                m_OthelloBoard[5, 4].M_CellValue = Point.k_Black;
+                m_OthelloBoard[5, 5].M_CellValue = Point.k_White;
+
+                m_OthelloBoard[4, 4].M_IsAvailableCell = false;
+                m_OthelloBoard[4, 5].M_IsAvailableCell = false;
+                m_OthelloBoard[5, 4].M_IsAvailableCell = false;
+                m_OthelloBoard[5, 5].M_IsAvailableCell = false;
+            }
+            else if (m_BoardSize == 12)
+            {
+                m_OthelloBoard[5, 5].M_CellValue = Point.k_White;
+                m_OthelloBoard[5, 6].M_CellValue = Point.k_Black;
+                m_OthelloBoard[6, 5].M_CellValue = Point.k_Black;
+                m_OthelloBoard[6, 6].M_CellValue = Point.k_White;
+
+                m_OthelloBoard[5, 5].M_IsAvailableCell = false;
+                m_OthelloBoard[5, 6].M_IsAvailableCell = false;
+                m_OthelloBoard[6, 5].M_IsAvailableCell = false;
+                m_OthelloBoard[6, 6].M_IsAvailableCell = false;
             }
         }
 

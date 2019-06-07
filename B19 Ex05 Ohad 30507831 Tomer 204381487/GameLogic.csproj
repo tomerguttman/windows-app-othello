@@ -38,7 +38,6 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GameManager.cs" />
     <Compile Include="TurnManager.cs" />
   </ItemGroup>
   <ItemGroup>

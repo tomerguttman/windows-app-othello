@@ -127,6 +127,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\81IWeBMgK9L._SX466_.jpg" />
     <Content Include="Resources\CoinRed1.png" />
     <Content Include="Resources\CoinYellow1.png" />
     <Content Include="Resources\Othello6x6BoardBackground.jpg" />
