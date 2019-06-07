@@ -36,13 +36,15 @@ namespace UI
             STARTGAME:
             Form othelloForm = ReturnFormInSizeChosen(boardSize, numberOfPlayers);
 
-            othelloForm.ShowDialog();
-            gameOverMessage = GetGameOverMessage(GetOthelloBoard(othelloForm), ref numOfWinsBlack, ref numOfWinsWhite);
-            EndOthelloForm endForm = new EndOthelloForm();
-            endForm.Controls.Find("LabelGameRes", true)[0].Text = gameOverMessage;
-            if (endForm.ShowDialog() == DialogResult.OK)
+            if (othelloForm.ShowDialog() == DialogResult.OK)
             {
-                goto STARTGAME;
+                gameOverMessage = GetGameOverMessage(GetOthelloBoard(othelloForm), ref numOfWinsBlack, ref numOfWinsWhite);
+                EndOthelloForm endForm = new EndOthelloForm();
+                endForm.Controls.Find("LabelGameRes", true)[0].Text = gameOverMessage;
+                if (endForm.ShowDialog() == DialogResult.OK)
+                {
+                    goto STARTGAME;
+                }
             }
         }
 
