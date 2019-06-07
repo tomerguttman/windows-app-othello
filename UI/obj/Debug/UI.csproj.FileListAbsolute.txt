@@ -14,7 +14,6 @@ C:\Users\Tomer\Documents\Computer Science Programming\.NET Framework C#\Task1\Wi
 C:\Users\Tomer\Documents\Computer Science Programming\.NET Framework C#\Task1\WindowsApp_Othello\UI\bin\Debug\GameData.pdb
 C:\Users\Tomer\Documents\Computer Science Programming\.NET Framework C#\Task1\WindowsApp_Othello\UI\obj\Debug\UI.exe
 C:\Users\Tomer\Documents\Computer Science Programming\.NET Framework C#\Task1\WindowsApp_Othello\UI\obj\Debug\UI.pdb
-C:\Users\Tomer\Documents\Computer Science Programming\.NET Framework C#\Task1\WindowsApp_Othello\UI\obj\Debug\UI.EndOthelloForm.resources
 C:\Users\ohad\Desktop\GitHub\WindowsApp_Othello\UI\obj\Debug\UI.exe
 C:\Users\ohad\Desktop\GitHub\WindowsApp_Othello\UI\obj\Debug\UI.pdb
 C:\Users\ohad\Desktop\GitHub\WindowsApp_Othello\UI\bin\Debug\UI.exe

@@ -1,6 +1,5 @@
 C:\Users\Tomer\Documents\Computer Science Programming\.NET Framework C#\Task1\WindowsApp_Othello\GameData\bin\Debug\GameData.dll
 C:\Users\Tomer\Documents\Computer Science Programming\.NET Framework C#\Task1\WindowsApp_Othello\GameData\bin\Debug\GameData.pdb
-C:\Users\Tomer\Documents\Computer Science Programming\.NET Framework C#\Task1\WindowsApp_Othello\GameData\obj\Debug\GameData.csprojResolveAssemblyReference.cache
 C:\Users\Tomer\Documents\Computer Science Programming\.NET Framework C#\Task1\WindowsApp_Othello\GameData\obj\Debug\GameData.dll
 C:\Users\Tomer\Documents\Computer Science Programming\.NET Framework C#\Task1\WindowsApp_Othello\GameData\obj\Debug\GameData.pdb
 C:\Users\ohad\Desktop\GitHub\WindowsApp_Othello\GameData\bin\Debug\GameData.dll

@@ -28,20 +28,23 @@ namespace UI
             int boardSize = 0;
             int numberOfPlayers = 0;
             string gameOverMessage = null;
+            string caption = null;
             int numOfWinsBlack = 0;
             int numOfWinsWhite = 0;
 
             InitializeGame(out boardSize, out numberOfPlayers);
 
             STARTGAME:
+            
             Form othelloForm = ReturnFormInSizeChosen(boardSize, numberOfPlayers);
 
             if (othelloForm.ShowDialog() == DialogResult.OK)
             {
-                gameOverMessage = GetGameOverMessage(GetOthelloBoard(othelloForm), ref numOfWinsBlack, ref numOfWinsWhite);
-                EndOthelloForm endForm = new EndOthelloForm();
-                endForm.Controls.Find("LabelGameRes", true)[0].Text = gameOverMessage;
-                if (endForm.ShowDialog() == DialogResult.OK)
+                gameOverMessage = GetGameOverMessage(GetOthelloBoard(othelloForm), ref numOfWinsBlack, ref numOfWinsWhite) + "\nWould you like another round?";
+                caption = "Othello";
+                MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+                DialogResult result = MessageBox.Show(gameOverMessage, caption, buttons, MessageBoxIcon.Information); 
+                if (result == DialogResult.Yes)
                 {
                     goto STARTGAME;
                 }
@@ -141,7 +144,7 @@ namespace UI
             o_MyOthelloBoardSize = 0;
             o_NumberOfPlayers = 0;
             SettingsForm othelloSettingsForm = new SettingsForm();
-
+            
             if(othelloSettingsForm.ShowDialog() == DialogResult.OK)
             {
                 o_MyOthelloBoardSize = othelloSettingsForm.BoardSize;
