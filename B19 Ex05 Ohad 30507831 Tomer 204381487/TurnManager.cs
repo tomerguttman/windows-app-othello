@@ -14,7 +14,6 @@ namespace GameLogic
 
         public static List<string> GetListOfOptionalPointsToChooseFromParsedToString(GameData.OthelloBoard i_OthelloBoard, char i_CurrentPlayerColor)
         {
-
             GameData.OthelloBoard tempOthelloBoard = new GameData.OthelloBoard(i_OthelloBoard);
             List<GameData.OthelloBoard.Point> validPointsToChooseFrom = new List<GameData.OthelloBoard.Point>();
             List<string> o_ValidPointsToChooseFromString  = new List<string>();
@@ -41,7 +40,7 @@ namespace GameLogic
             UpLeft,
         }
 
-        public static void OthelloTurnManager(GameData.OthelloBoard io_OthelloBoard, string i_PointName, GameData.OthelloPlayer i_Player)// ref int io_ConsecutiveNumberOfTurnsWithoutValidMoves)
+        public static void OthelloTurnManager(GameData.OthelloBoard io_OthelloBoard, string i_PointName, GameData.OthelloPlayer i_Player)
         {
             GameData.OthelloBoard tempOthelloBoard = new GameData.OthelloBoard(io_OthelloBoard);
             GameData.OthelloBoard.Point playersPointChoice = GameData.OthelloBoard.Point.ToPoint(i_PointName);
@@ -203,7 +202,6 @@ namespace GameLogic
 
         public static void UpdateCellsValidity(GameData.OthelloBoard io_OthelloBoard, GameData.OthelloBoard.Point i_CurrentPoint, int i_LongtitudeValue, int i_LatitudeValue, List<GameData.OthelloBoard.Point> io_ValidPointsToChooseFrom)
         {
-            //io_ValidPointsToChooseFrom = new List<GameData.OthelloBoard.Point>();
             int latitude = (i_CurrentPoint.M_Latitude - 'A') + i_LatitudeValue;
             int longtitude = i_CurrentPoint.M_Longtitude - 1 + i_LongtitudeValue;
             bool isPotentialValidPoint = false;

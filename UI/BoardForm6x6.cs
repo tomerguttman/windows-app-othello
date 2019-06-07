@@ -10,11 +10,11 @@ namespace UI
 {
     public partial class FormBoard6x6 : Form
     {
-        GameData.OthelloBoard m_OthelloBoard = null;
-        GameData.OthelloPlayer[] m_Players = new GameData.OthelloPlayer[2];
-        int m_ConsecutiveNumberOfTurnsWithoutValidMoves = 0;
-        int m_AmountOfPlayersPlaying = 0;
-        const int k_BoardSize = 6;
+        private const int k_BoardSize = 6;
+        private GameData.OthelloBoard m_OthelloBoard = null;
+        private GameData.OthelloPlayer[] m_Players = new GameData.OthelloPlayer[2];
+        private int m_ConsecutiveNumberOfTurnsWithoutValidMoves = 0;
+        private int m_AmountOfPlayersPlaying = 0;
 
         public FormBoard6x6(int i_NumberOfPlayers)
         {
@@ -26,7 +26,6 @@ namespace UI
             if (i_NumberOfPlayers == 1)
             {
                 m_Players[1] = new GameData.OthelloPlayer(3);
-
             }
             else
             {
@@ -47,7 +46,6 @@ namespace UI
 
         private void BoardForm_Load(object sender, EventArgs e)
         {
-
         }
 
         private void pictureBox_Click(object sender, EventArgs e)
@@ -68,7 +66,7 @@ namespace UI
 
             foreach(GameData.OthelloBoard.Point currentPoint in m_OthelloBoard.M_OthelloBoard)
             {
-                currentPictureBox = (Controls.Find("pictureBox" + currentPoint.ToString(), true)[0] as PictureBox);
+                currentPictureBox = Controls.Find("pictureBox" + currentPoint.ToString(), true)[0] as PictureBox;
                 currentPictureBox.Enabled = false;
 
                 if (currentPoint.M_CellValue == GameData.OthelloBoard.Point.k_Black)
@@ -97,6 +95,7 @@ namespace UI
             {
                 currentPlayer = m_Players[1];
             }
+
             return currentPlayer;
         }
 
@@ -129,7 +128,7 @@ namespace UI
             return o_CurrentPlayerColor;
         }
 
-        void UpdateFormValidPointsToChooseFrom(char i_PlayerColor)
+        private void UpdateFormValidPointsToChooseFrom(char i_PlayerColor)
         {
            List<string> computerOptionalMoves = null;
            Bitmap currentPlayerRefreshIcon = GetPlayerRefreshIcon(i_PlayerColor);
@@ -140,7 +139,7 @@ namespace UI
             {
                 foreach (string currentPictureBoxName in currentPlayerOptionalActionsOnFormBoard)
                 {
-                    currentPictureBox = (Controls.Find("pictureBox" + currentPictureBoxName, true)[0] as PictureBox);
+                    currentPictureBox = Controls.Find("pictureBox" + currentPictureBoxName, true)[0] as PictureBox;
                     currentPictureBox.BackgroundImage = currentPlayerRefreshIcon;
                     currentPictureBox.Enabled = true;
                 }
@@ -155,16 +154,14 @@ namespace UI
                     if (computerOptionalMoves.Count > 0)
                     {
                         computerChosenPictureBoxName = computerOptionalMoves[new Random().Next(0, computerOptionalMoves.Count)];
-                        //GameLogic.TurnManager.OthelloTurnManager(m_OthelloBoard, "pictureBox" + computerChosenPictureBoxName, m_Players[1]);
                     }
 
-                    pictureBox_Click((Controls.Find("pictureBox" + computerChosenPictureBoxName, true)[0] as PictureBox), new EventArgs());
-
+                    pictureBox_Click(Controls.Find("pictureBox" + computerChosenPictureBoxName, true)[0] as PictureBox, new EventArgs());
                 }
             }
             else
             {
-                m_ConsecutiveNumberOfTurnsWithoutValidMoves += 1; //need to be checked!
+                m_ConsecutiveNumberOfTurnsWithoutValidMoves += 1;
 
                 if (m_ConsecutiveNumberOfTurnsWithoutValidMoves == 2)
                 {

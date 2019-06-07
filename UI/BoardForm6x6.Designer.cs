@@ -1,7 +1,8 @@
 ﻿using System.Windows.Forms;
+
 namespace UI
 {
-    partial class FormBoard6x6 
+    public partial class FormBoard6x6 
     {
         /// <summary>
         /// Required designer variable.
@@ -18,6 +19,7 @@ namespace UI
             {
                 components.Dispose();
             }
+
             base.Dispose(disposing);
         }
 

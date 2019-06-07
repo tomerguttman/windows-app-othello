@@ -1,6 +1,6 @@
 ﻿namespace UI
 {
-    partial class SettingsForm
+    public partial class SettingsForm
     {
         /// <summary>
         /// Required designer variable.
@@ -17,6 +17,7 @@
             {
                 components.Dispose();
             }
+
             base.Dispose(disposing);
         }
 
@@ -97,4 +98,3 @@
         private System.Windows.Forms.Button ButtonAgainstFriend;
     }
 }
-

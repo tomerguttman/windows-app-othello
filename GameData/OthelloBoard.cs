@@ -144,12 +144,34 @@ namespace GameData
         public class Point
         {
             private bool m_IsAvailableCell = false;
-            private int m_Longtitude;//oreh
-            private char m_Latitude;//rohav
+            private int m_Longtitude;
+            private char m_Latitude;
             private char m_CellValue;
             public const char k_Black = 'X';
             public const char k_White = 'O';
             public const char k_Empty = ' ';
+
+            public static Point ToPoint(string i_PointName)
+            {
+                Point returnPoint = new Point(0, '\0', '\0');
+                int i;
+                int strLength = i_PointName.Length;
+
+                for (i = 10; i < strLength; i++)
+                {
+                    if (char.IsDigit(i_PointName[i]))
+                    {
+                        returnPoint.M_Longtitude *= 10;
+                        returnPoint.M_Longtitude += int.Parse(i_PointName[i].ToString());
+                    }
+                    else
+                    {
+                        returnPoint.M_Latitude = i_PointName[i];
+                    }
+                }
+
+                return returnPoint;
+            }
 
             public Point(int i_Longtitude, char i_Latitude, char i_CellValue)
             {
@@ -210,35 +232,12 @@ namespace GameData
                 }
             }
 
-            public override string ToString() //well have to check if it works properly.
+            public override string ToString()
             {
                 string o_PointInString = null;
-                o_PointInString += (this.m_Longtitude).ToString();
-                o_PointInString += (((this.m_Latitude)).ToString());
+                o_PointInString += this.m_Longtitude.ToString();
+                o_PointInString += this.m_Latitude.ToString();
                 return o_PointInString;
-            }
-
-            public static Point ToPoint(string i_PointName)
-            { 
-                Point returnPoint = new Point(0,'\0','\0');
-                int i;
-                int strLength = i_PointName.Length;
-                
-
-                for (i = 10; i < strLength; i++)
-                {
-                    if(char.IsDigit(i_PointName[i]))
-                    {
-                        returnPoint.M_Longtitude *= 10;
-                        returnPoint.M_Longtitude += int.Parse(i_PointName[i].ToString());
-                    }
-                    else
-                    {
-                        returnPoint.M_Latitude = i_PointName[i];
-                    }
-                }
-
-                return returnPoint;
             }
         }
     }

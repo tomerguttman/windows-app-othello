@@ -5,13 +5,10 @@ using GameData;
 
 namespace UI
 {
-    static class Program
+    public static class Program
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>ss
         [STAThread]
-        static void Main()
+        public static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
@@ -54,21 +51,19 @@ namespace UI
         private static OthelloBoard GetOthelloBoard(Form i_OthelloForm)
         {
             GameData.OthelloBoard returnOthelloBoard = null;
-            if(i_OthelloForm is FormBoard6x6)
+            if (i_OthelloForm is FormBoard6x6)
             {
                 returnOthelloBoard = (i_OthelloForm as FormBoard6x6).OthelloBoard;
             }
-            if (i_OthelloForm is BoardForm8x8)
+            else if (i_OthelloForm is BoardForm8x8)
             {
                 returnOthelloBoard = (i_OthelloForm as BoardForm8x8).OthelloBoard;
             }
-
-            if (i_OthelloForm is BoardForm10x10)
+            else if (i_OthelloForm is BoardForm10x10)
             {
                 returnOthelloBoard = (i_OthelloForm as BoardForm10x10).OthelloBoard;
             }
-
-            if (i_OthelloForm is BoardForm12x12)
+            else if (i_OthelloForm is BoardForm12x12)
             {
                 returnOthelloBoard = (i_OthelloForm as BoardForm12x12).OthelloBoard;
             }
@@ -97,12 +92,12 @@ namespace UI
             if (numOfBlackDiscs > numOfWhiteDiscs)
             {
                 io_NumOfWinsBlack += 1;
-                returnGameOverMessage = string.Format("Black Won!! ({0}/{1}) ({2}/{3})", numOfBlackDiscs, numOfWhiteDiscs, io_NumOfWinsBlack, (io_NumOfWinsBlack + io_NumOfWinsWhite));
+                returnGameOverMessage = string.Format("Black Won!! ({0}/{1}) ({2}/{3})", numOfBlackDiscs, numOfWhiteDiscs, io_NumOfWinsBlack, io_NumOfWinsBlack + io_NumOfWinsWhite);
             }
             else if (numOfBlackDiscs < numOfWhiteDiscs)
             {
                 io_NumOfWinsWhite += 1;
-                returnGameOverMessage = string.Format("White Won!! ({0}/{1}) ({2}/{3})", numOfWhiteDiscs, numOfBlackDiscs, io_NumOfWinsWhite, (io_NumOfWinsBlack + io_NumOfWinsWhite));
+                returnGameOverMessage = string.Format("White Won!! ({0}/{1}) ({2}/{3})", numOfWhiteDiscs, numOfBlackDiscs, io_NumOfWinsWhite, io_NumOfWinsBlack + io_NumOfWinsWhite);
             }
             else
             {
@@ -110,7 +105,6 @@ namespace UI
             }
 
             return returnGameOverMessage;
-
         }
 
         private static Form ReturnFormInSizeChosen(int i_BoardSize, int i_numberOfPlayers)
@@ -124,15 +118,15 @@ namespace UI
                     break;
 
                 case 8:
-                    o_ReturnForm = new BoardForm8x8(i_numberOfPlayers);  ///need to update ctor
+                    o_ReturnForm = new BoardForm8x8(i_numberOfPlayers);
                     break;
 
                 case 10:
-                    o_ReturnForm = new BoardForm10x10(i_numberOfPlayers);  ///need to update ctor
+                    o_ReturnForm = new BoardForm10x10(i_numberOfPlayers);
                     break;
 
                 case 12:
-                    o_ReturnForm = new BoardForm12x12(i_numberOfPlayers);   ///need to update ctor
+                    o_ReturnForm = new BoardForm12x12(i_numberOfPlayers);  
                     break;
             }
 

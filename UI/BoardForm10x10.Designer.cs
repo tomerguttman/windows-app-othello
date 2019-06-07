@@ -2,7 +2,7 @@
 
 namespace UI
 {
-    partial class BoardForm10x10
+    public partial class BoardForm10x10
     {
         /// <summary>
         /// Required designer variable.
@@ -19,6 +19,7 @@ namespace UI
             {
                 components.Dispose();
             }
+
             base.Dispose(disposing);
         }
 

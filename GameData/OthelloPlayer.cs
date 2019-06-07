@@ -6,10 +6,10 @@ namespace GameData
 {
     public class OthelloPlayer
     {
-        int m_PlayerNumber;
-        private char m_Color;
         public const char k_Black = 'X';
         public const char k_White = 'O';
+        private char m_Color;
+        public int m_PlayerNumber;
 
         public OthelloPlayer(int i_PlayerNumber)
         {

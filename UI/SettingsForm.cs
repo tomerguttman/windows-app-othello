@@ -10,8 +10,8 @@ namespace UI
 {
     public partial class SettingsForm : Form
     {
-        int m_BoardSize = 6;
-        int m_NumberOfPlayers = 0;
+        private int m_BoardSize = 6;
+        private int m_NumberOfPlayers = 0;
 
         public SettingsForm()
         {
@@ -29,7 +29,7 @@ namespace UI
                 m_BoardSize += 2;
             }
 
-            (sender as Button).Text = string.Format("Board size: {0}x{0} (click to increase)",m_BoardSize);
+            (sender as Button).Text = string.Format("Board size: {0}x{0} (click to increase)", m_BoardSize);
         }
 
         private void AgainstPc_Click(object sender, EventArgs e)
@@ -48,6 +48,7 @@ namespace UI
             {
                 return m_BoardSize;
             }
+
             set
             {
                 this.m_BoardSize = value;
@@ -60,6 +61,7 @@ namespace UI
             {
                 return m_NumberOfPlayers;
             }
+
             set
             {
                 this.m_NumberOfPlayers = value;
