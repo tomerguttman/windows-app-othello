@@ -1,5 +1,5 @@
 # Othello Game - Visual UI
-Othello game implemented with C#.
+Othello (also known as reversie) game implemented with C#.
 
 # Key learnings
 Microsoft visual studio .NET dev tools /
