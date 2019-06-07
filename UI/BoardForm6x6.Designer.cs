@@ -67,6 +67,18 @@ namespace UI
             this.pictureBox1B = new System.Windows.Forms.PictureBox();
             this.pictureBox1C = new System.Windows.Forms.PictureBox();
             this.ButtonGameOver = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6E)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6F)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6D)).BeginInit();
@@ -107,7 +119,7 @@ namespace UI
             // 
             // pictureBox6E
             // 
-            this.pictureBox6E.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.pictureBox6E.BackColor = System.Drawing.Color.PaleTurquoise;
             resources.ApplyResources(this.pictureBox6E, "pictureBox6E");
             this.pictureBox6E.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox6E.Name = "pictureBox6E";
@@ -116,7 +128,7 @@ namespace UI
             // 
             // pictureBox6F
             // 
-            this.pictureBox6F.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.pictureBox6F.BackColor = System.Drawing.Color.PaleTurquoise;
             resources.ApplyResources(this.pictureBox6F, "pictureBox6F");
             this.pictureBox6F.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox6F.Name = "pictureBox6F";
@@ -125,7 +137,7 @@ namespace UI
             // 
             // pictureBox6D
             // 
-            this.pictureBox6D.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.pictureBox6D.BackColor = System.Drawing.Color.PaleTurquoise;
             resources.ApplyResources(this.pictureBox6D, "pictureBox6D");
             this.pictureBox6D.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox6D.Name = "pictureBox6D";
@@ -134,7 +146,7 @@ namespace UI
             // 
             // pictureBox6A
             // 
-            this.pictureBox6A.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.pictureBox6A.BackColor = System.Drawing.Color.PaleTurquoise;
             resources.ApplyResources(this.pictureBox6A, "pictureBox6A");
             this.pictureBox6A.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox6A.Name = "pictureBox6A";
@@ -143,7 +155,7 @@ namespace UI
             // 
             // pictureBox6B
             // 
-            this.pictureBox6B.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.pictureBox6B.BackColor = System.Drawing.Color.PaleTurquoise;
             resources.ApplyResources(this.pictureBox6B, "pictureBox6B");
             this.pictureBox6B.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox6B.Name = "pictureBox6B";
@@ -152,7 +164,7 @@ namespace UI
             // 
             // pictureBox6C
             // 
-            this.pictureBox6C.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.pictureBox6C.BackColor = System.Drawing.Color.PaleTurquoise;
             resources.ApplyResources(this.pictureBox6C, "pictureBox6C");
             this.pictureBox6C.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox6C.Name = "pictureBox6C";
@@ -161,7 +173,7 @@ namespace UI
             // 
             // pictureBox5E
             // 
-            this.pictureBox5E.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.pictureBox5E.BackColor = System.Drawing.Color.PaleTurquoise;
             resources.ApplyResources(this.pictureBox5E, "pictureBox5E");
             this.pictureBox5E.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox5E.Name = "pictureBox5E";
@@ -170,7 +182,7 @@ namespace UI
             // 
             // pictureBox5F
             // 
-            this.pictureBox5F.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.pictureBox5F.BackColor = System.Drawing.Color.PaleTurquoise;
             resources.ApplyResources(this.pictureBox5F, "pictureBox5F");
             this.pictureBox5F.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox5F.Name = "pictureBox5F";
@@ -179,7 +191,7 @@ namespace UI
             // 
             // pictureBox5D
             // 
-            this.pictureBox5D.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.pictureBox5D.BackColor = System.Drawing.Color.PaleTurquoise;
             resources.ApplyResources(this.pictureBox5D, "pictureBox5D");
             this.pictureBox5D.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox5D.Name = "pictureBox5D";
@@ -188,7 +200,7 @@ namespace UI
             // 
             // pictureBox5A
             // 
-            this.pictureBox5A.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.pictureBox5A.BackColor = System.Drawing.Color.PaleTurquoise;
             resources.ApplyResources(this.pictureBox5A, "pictureBox5A");
             this.pictureBox5A.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox5A.Name = "pictureBox5A";
@@ -197,7 +209,7 @@ namespace UI
             // 
             // pictureBox5B
             // 
-            this.pictureBox5B.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.pictureBox5B.BackColor = System.Drawing.Color.PaleTurquoise;
             resources.ApplyResources(this.pictureBox5B, "pictureBox5B");
             this.pictureBox5B.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox5B.Name = "pictureBox5B";
@@ -206,7 +218,7 @@ namespace UI
             // 
             // pictureBox5C
             // 
-            this.pictureBox5C.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.pictureBox5C.BackColor = System.Drawing.Color.PaleTurquoise;
             resources.ApplyResources(this.pictureBox5C, "pictureBox5C");
             this.pictureBox5C.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox5C.Name = "pictureBox5C";
@@ -215,7 +227,7 @@ namespace UI
             // 
             // pictureBox4E
             // 
-            this.pictureBox4E.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.pictureBox4E.BackColor = System.Drawing.Color.PaleTurquoise;
             resources.ApplyResources(this.pictureBox4E, "pictureBox4E");
             this.pictureBox4E.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox4E.Name = "pictureBox4E";
@@ -224,7 +236,7 @@ namespace UI
             // 
             // pictureBox4F
             // 
-            this.pictureBox4F.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.pictureBox4F.BackColor = System.Drawing.Color.PaleTurquoise;
             resources.ApplyResources(this.pictureBox4F, "pictureBox4F");
             this.pictureBox4F.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox4F.Name = "pictureBox4F";
@@ -233,7 +245,7 @@ namespace UI
             // 
             // pictureBox4D
             // 
-            this.pictureBox4D.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.pictureBox4D.BackColor = System.Drawing.Color.PaleTurquoise;
             resources.ApplyResources(this.pictureBox4D, "pictureBox4D");
             this.pictureBox4D.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox4D.Name = "pictureBox4D";
@@ -242,7 +254,7 @@ namespace UI
             // 
             // pictureBox4A
             // 
-            this.pictureBox4A.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.pictureBox4A.BackColor = System.Drawing.Color.PaleTurquoise;
             resources.ApplyResources(this.pictureBox4A, "pictureBox4A");
             this.pictureBox4A.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox4A.Name = "pictureBox4A";
@@ -251,7 +263,7 @@ namespace UI
             // 
             // pictureBox4B
             // 
-            this.pictureBox4B.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.pictureBox4B.BackColor = System.Drawing.Color.PaleTurquoise;
             resources.ApplyResources(this.pictureBox4B, "pictureBox4B");
             this.pictureBox4B.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox4B.Name = "pictureBox4B";
@@ -260,7 +272,7 @@ namespace UI
             // 
             // pictureBox4C
             // 
-            this.pictureBox4C.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.pictureBox4C.BackColor = System.Drawing.Color.PaleTurquoise;
             resources.ApplyResources(this.pictureBox4C, "pictureBox4C");
             this.pictureBox4C.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox4C.Name = "pictureBox4C";
@@ -269,7 +281,7 @@ namespace UI
             // 
             // pictureBox3E
             // 
-            this.pictureBox3E.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.pictureBox3E.BackColor = System.Drawing.Color.PaleTurquoise;
             resources.ApplyResources(this.pictureBox3E, "pictureBox3E");
             this.pictureBox3E.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox3E.Name = "pictureBox3E";
@@ -278,7 +290,7 @@ namespace UI
             // 
             // pictureBox3F
             // 
-            this.pictureBox3F.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.pictureBox3F.BackColor = System.Drawing.Color.PaleTurquoise;
             resources.ApplyResources(this.pictureBox3F, "pictureBox3F");
             this.pictureBox3F.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox3F.Name = "pictureBox3F";
@@ -287,7 +299,7 @@ namespace UI
             // 
             // pictureBox3D
             // 
-            this.pictureBox3D.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.pictureBox3D.BackColor = System.Drawing.Color.PaleTurquoise;
             resources.ApplyResources(this.pictureBox3D, "pictureBox3D");
             this.pictureBox3D.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox3D.Name = "pictureBox3D";
@@ -296,7 +308,7 @@ namespace UI
             // 
             // pictureBox3A
             // 
-            this.pictureBox3A.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.pictureBox3A.BackColor = System.Drawing.Color.PaleTurquoise;
             resources.ApplyResources(this.pictureBox3A, "pictureBox3A");
             this.pictureBox3A.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox3A.Name = "pictureBox3A";
@@ -305,7 +317,7 @@ namespace UI
             // 
             // pictureBox3B
             // 
-            this.pictureBox3B.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.pictureBox3B.BackColor = System.Drawing.Color.PaleTurquoise;
             resources.ApplyResources(this.pictureBox3B, "pictureBox3B");
             this.pictureBox3B.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox3B.Name = "pictureBox3B";
@@ -314,7 +326,7 @@ namespace UI
             // 
             // pictureBox3C
             // 
-            this.pictureBox3C.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.pictureBox3C.BackColor = System.Drawing.Color.PaleTurquoise;
             resources.ApplyResources(this.pictureBox3C, "pictureBox3C");
             this.pictureBox3C.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox3C.Name = "pictureBox3C";
@@ -323,7 +335,7 @@ namespace UI
             // 
             // pictureBox2E
             // 
-            this.pictureBox2E.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.pictureBox2E.BackColor = System.Drawing.Color.PaleTurquoise;
             resources.ApplyResources(this.pictureBox2E, "pictureBox2E");
             this.pictureBox2E.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox2E.Name = "pictureBox2E";
@@ -332,7 +344,7 @@ namespace UI
             // 
             // pictureBox2F
             // 
-            this.pictureBox2F.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.pictureBox2F.BackColor = System.Drawing.Color.PaleTurquoise;
             resources.ApplyResources(this.pictureBox2F, "pictureBox2F");
             this.pictureBox2F.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox2F.Name = "pictureBox2F";
@@ -341,7 +353,7 @@ namespace UI
             // 
             // pictureBox2D
             // 
-            this.pictureBox2D.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.pictureBox2D.BackColor = System.Drawing.Color.PaleTurquoise;
             resources.ApplyResources(this.pictureBox2D, "pictureBox2D");
             this.pictureBox2D.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox2D.Name = "pictureBox2D";
@@ -350,7 +362,7 @@ namespace UI
             // 
             // pictureBox2A
             // 
-            this.pictureBox2A.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.pictureBox2A.BackColor = System.Drawing.Color.PaleTurquoise;
             resources.ApplyResources(this.pictureBox2A, "pictureBox2A");
             this.pictureBox2A.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox2A.Name = "pictureBox2A";
@@ -359,7 +371,7 @@ namespace UI
             // 
             // pictureBox2B
             // 
-            this.pictureBox2B.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.pictureBox2B.BackColor = System.Drawing.Color.PaleTurquoise;
             resources.ApplyResources(this.pictureBox2B, "pictureBox2B");
             this.pictureBox2B.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox2B.Name = "pictureBox2B";
@@ -368,7 +380,7 @@ namespace UI
             // 
             // pictureBox2C
             // 
-            this.pictureBox2C.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.pictureBox2C.BackColor = System.Drawing.Color.PaleTurquoise;
             resources.ApplyResources(this.pictureBox2C, "pictureBox2C");
             this.pictureBox2C.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox2C.Name = "pictureBox2C";
@@ -377,7 +389,7 @@ namespace UI
             // 
             // pictureBox1E
             // 
-            this.pictureBox1E.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.pictureBox1E.BackColor = System.Drawing.Color.PaleTurquoise;
             resources.ApplyResources(this.pictureBox1E, "pictureBox1E");
             this.pictureBox1E.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1E.Name = "pictureBox1E";
@@ -386,7 +398,7 @@ namespace UI
             // 
             // pictureBox1F
             // 
-            this.pictureBox1F.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.pictureBox1F.BackColor = System.Drawing.Color.PaleTurquoise;
             resources.ApplyResources(this.pictureBox1F, "pictureBox1F");
             this.pictureBox1F.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1F.Name = "pictureBox1F";
@@ -395,7 +407,7 @@ namespace UI
             // 
             // pictureBox1D
             // 
-            this.pictureBox1D.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.pictureBox1D.BackColor = System.Drawing.Color.PaleTurquoise;
             resources.ApplyResources(this.pictureBox1D, "pictureBox1D");
             this.pictureBox1D.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1D.Name = "pictureBox1D";
@@ -404,7 +416,7 @@ namespace UI
             // 
             // pictureBox1A
             // 
-            this.pictureBox1A.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.pictureBox1A.BackColor = System.Drawing.Color.PaleTurquoise;
             resources.ApplyResources(this.pictureBox1A, "pictureBox1A");
             this.pictureBox1A.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1A.Name = "pictureBox1A";
@@ -413,7 +425,7 @@ namespace UI
             // 
             // pictureBox1B
             // 
-            this.pictureBox1B.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.pictureBox1B.BackColor = System.Drawing.Color.PaleTurquoise;
             resources.ApplyResources(this.pictureBox1B, "pictureBox1B");
             this.pictureBox1B.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1B.Name = "pictureBox1B";
@@ -422,7 +434,7 @@ namespace UI
             // 
             // pictureBox1C
             // 
-            this.pictureBox1C.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.pictureBox1C.BackColor = System.Drawing.Color.PaleTurquoise;
             resources.ApplyResources(this.pictureBox1C, "pictureBox1C");
             this.pictureBox1C.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1C.Name = "pictureBox1C";
@@ -437,12 +449,96 @@ namespace UI
             this.ButtonGameOver.UseVisualStyleBackColor = true;
             this.ButtonGameOver.Click += new System.EventHandler(this.ButtonGameOver_Click);
             // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Name = "label1";
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Name = "label2";
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Name = "label3";
+            // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Name = "label4";
+            // 
+            // label5
+            // 
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Name = "label5";
+            // 
+            // label6
+            // 
+            resources.ApplyResources(this.label6, "label6");
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Name = "label6";
+            // 
+            // label7
+            // 
+            resources.ApplyResources(this.label7, "label7");
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Name = "label7";
+            // 
+            // label8
+            // 
+            resources.ApplyResources(this.label8, "label8");
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Name = "label8";
+            // 
+            // label9
+            // 
+            resources.ApplyResources(this.label9, "label9");
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Name = "label9";
+            // 
+            // label10
+            // 
+            resources.ApplyResources(this.label10, "label10");
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Name = "label10";
+            // 
+            // label11
+            // 
+            resources.ApplyResources(this.label11, "label11");
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Name = "label11";
+            // 
+            // label12
+            // 
+            resources.ApplyResources(this.label12, "label12");
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Name = "label12";
+            // 
             // FormBoard6x6
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.BackgroundImage = global::UI.Properties.Resources._81IWeBMgK9L__SX466_;
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.ButtonGameOver);
             this.Controls.Add(this.pictureBox6E);
             this.Controls.Add(this.pictureBox6F);
@@ -522,6 +618,7 @@ namespace UI
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1B)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1C)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -564,5 +661,17 @@ namespace UI
         private PictureBox pictureBox6F;
         private PictureBox pictureBox6E;
         private Button ButtonGameOver;
+        private Label label1;
+        private Label label2;
+        private Label label3;
+        private Label label4;
+        private Label label5;
+        private Label label6;
+        private Label label7;
+        private Label label8;
+        private Label label9;
+        private Label label10;
+        private Label label11;
+        private Label label12;
     }
 }
