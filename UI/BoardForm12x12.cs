@@ -206,6 +206,7 @@ namespace UI
         private void ButtonGameOver_Click(object sender, EventArgs e)
         {
             System.Threading.Thread.Sleep(1000);
+            this.DialogResult = DialogResult.OK;
             this.Close();
         }
     }
